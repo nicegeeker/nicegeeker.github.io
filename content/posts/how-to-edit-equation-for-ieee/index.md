@@ -23,9 +23,9 @@ categories: ["research"]
      - 不同的公式环境，前后留白的大小不一样
      - `equation`环境可以实现自动换行，但是有些时候，公式后面还有公式标号的空间时，也会自动换行后再生成公式标号，而`IEEEequarray`可以完全自由地控制换行的位置
      - `align`环境在某行公式过长时，会产生对齐问题，如下图所示。
-     ![`align`环境对齐问题](http://pic.rgsc.top/2020-12-10-f4f8aa47-align_prob.png)
+     ![`align`环境对齐问题](https://pic.rgsc.top/2020-12-10-f4f8aa47-align_prob.png)
      - `equarray`环境可以解决公式对齐的问题，但是对齐后会导致`=`前后的空格变大，与其他任何一种环境都不一样，所以应**严格不使用该环境**
-  ![](http://pic.rgsc.top/2020-12-10-d53659a0-equarray.png)
+  ![](https://pic.rgsc.top/2020-12-10-d53659a0-equarray.png)
       - `IEEEeqnarray`环境的灵活性和一致性，可以实现所有公式编辑中需要的功能
   
 3. 在使用`IEEEeqnarray`环境时，如果文档使用的是`\documentclass[]{IEEEtran}`，则直接使用即可，如果不是则要载入包`\usepackage{IEEEtrantools}`(回复审稿意见时可能会用到)。
@@ -96,7 +96,7 @@ categories: ["research"]
 \end{IEEEeqnarray}
 ```
 显示效果如下：
-![](http://pic.rgsc.top/2020-12-10-b49fe48b-multi_col.png)
+![](https://pic.rgsc.top/2020-12-10-b49fe48b-multi_col.png)
 通过，添加`\qquad`可以调整下几行公式缩进的程度，*需特别注意：`\IEEEeqnarraymuticol`前面不可以添加`\lable{}`*。
 
 ### 3.控制公式中括号的大小
@@ -107,19 +107,19 @@ latex可以自动根据括号中公式的大小，调整对应的括号的大小
 \end{IEEEeqnarray}
 ```
 显示效果如下：
-![](http://pic.rgsc.top/2020-12-11-7ca0acc6-presences.png)
+![](https://pic.rgsc.top/2020-12-11-7ca0acc6-presences.png)
 
 但是还需要解决以下两个问题：
 
 - 用括号表示函数$f()$时，$f$与$()$的距离太远，如下图所示：
-   ![](http://pic.rgsc.top/2020-12-11-2725110a-too_far.png)
+   ![](https://pic.rgsc.top/2020-12-11-2725110a-too_far.png)
    可以在文件头加入以下代码解决此问题：
 ```latex
 \usepackage{mleftright}
 \mleftright
 ```
 - 当左、右括号之间出现换行时，如下图所示
-    ![](http://pic.rgsc.top/2020-12-11-bd6afbb7-swicth_line.png)
+    ![](https://pic.rgsc.top/2020-12-11-bd6afbb7-swicth_line.png)
     可以在头文件加入以下代码解决此问题：
 ```latex
 \newcommand{\sizecorr}[1]{\makebox[0cm]{\phantom{$\displaystyle #1$}}}
@@ -197,7 +197,7 @@ We have
 \end{IEEEeqnarray}
 ```
 显示效果如下：
-![](http://pic.rgsc.top/2020-12-10-cb2793f2-align.png)
+![](https://pic.rgsc.top/2020-12-10-cb2793f2-align.png)
 
 注意中间的and部分实现代码是`\noalign{\noindent and \vspace{2\jot}}`。
 

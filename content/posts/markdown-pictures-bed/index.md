@@ -19,7 +19,7 @@ categories: ["technology"]
 
 ## 注册七牛云帐号，并开启一个免费的对象存储服务
 [七牛云](https://portal.qiniu.com/signup?code=1h5qh8sbdbpzm)
-![七牛云对象存储](http://pic.rgsc.top/2020-12-04-62b8cb8d-Jietu20201204-093200.png)
+![七牛云对象存储](https://pic.rgsc.top/2020-12-04-62b8cb8d-Jietu20201204-093200.png)
 
 ## 下载七牛云的qshell命令行工具
 [qshell下载地址](https://developer.qiniu.com/kodo/tools/1302/qshell#4)
@@ -38,7 +38,7 @@ accesskey和secretkey可以在七牛云账户“密钥管理”中找到， name
 
 ## 利用automator配置服务
 
-![配置示例图片](http://pic.rgsc.top/2020-12-04-bef87e47-%3aUsers%3asat%3aPictures%3aclip%3aJietu20201204-093958.png)
+![配置示例图片](https://pic.rgsc.top/2020-12-04-bef87e47-%3aUsers%3asat%3aPictures%3aclip%3aJietu20201204-093958.png)
 
 如图所示：
 
@@ -67,7 +67,7 @@ do
     if [ -f $f ]; then
         Key=$(date +%F)-$(date +%s | md5 | head -c 8)-$(basename $f)
         /opt/local/bin/qshell fput nicegeek-md-pic "$Key" $f
-        link="http://pic.rgsc.top/$(urlencode $Key)"
+        link="https://pic.rgsc.top/$(urlencode $Key)"
         if [ "$links" == "" ]; then
             links=$link
         else
@@ -86,9 +86,9 @@ echo -ne "![]($links)" | pbcopy
 这一行中的“nicegeek-md-pic”要修改成自己建的对象云存储仓库的名称。
 
 ```bash
-link="http://pic.rgsc.top/$(urlencode $Key)"
+link="https://pic.rgsc.top/$(urlencode $Key)"
 ```
-这一行中的“http://pic.rgsc.top/”要修改成对象存储空间绑定的域名。**七牛提供的测试域名1个月就失效了**，可以自己买一个并备案，这个有点麻烦，可以用[*阿里云*](https://wanwang.aliyun.com/?source=5176.11533457&userCode=drns2vxc)注册域名，进行备案。
+这一行中的“https://pic.rgsc.top/”要修改成对象存储空间绑定的域名。**七牛提供的测试域名1个月就失效了**，可以自己买一个并备案，这个有点麻烦，可以用[*阿里云*](https://wanwang.aliyun.com/?source=5176.11533457&userCode=drns2vxc)注册域名，进行备案。
 
 ### Apple Script通知内容
 ```
@@ -101,7 +101,7 @@ display notification "Markdown链接已自动复制" with title "图片上传成
 ## 设置服务快捷键
 
 设置方法：
-![](http://pic.rgsc.top/2020-12-04-3030f9e2-Jietu20201204-100232.png)
+![](https://pic.rgsc.top/2020-12-04-3030f9e2-Jietu20201204-100232.png)
 
 打开“系统偏好设置” -> “键盘” -> "快捷键" -> "服务" ， 找到刚刚用automator 创建的服务名称，我的名称是 “ 上传到七牛云-md” ， 然后将快捷键设置为 ⌘+U。
 

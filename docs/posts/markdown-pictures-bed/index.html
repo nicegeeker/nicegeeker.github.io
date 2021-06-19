@@ -29,9 +29,9 @@
         },"image": [{
                             "@type": "ImageObject",
                             "url": "http:\/\/nicegeeker.gitHub.io\/posts\/markdown-pictures-bed\/featured-image.png",
-                            "width":  474 ,
-                            "height":  316 
-                        }],"genre": "posts","keywords": "bolg, markdown","wordCount":  926 ,
+                            "width":  1420 ,
+                            "height":  708 
+                        }],"genre": "posts","keywords": "bolg, markdown","wordCount":  927 ,
         "url": "http:\/\/nicegeeker.gitHub.io\/posts\/markdown-pictures-bed\/","datePublished": "2020-02-19T09:27:56+08:00","dateModified": "2020-03-04T16:29:41+08:00","description": "利用七牛云的对象存储服务和mac的automator功能，打造一个可以一键上传图片文件，并自动将链接地址保存到粘贴板的功能。"
     }
     </script><script type="application/ld+json">
@@ -165,7 +165,7 @@
                             </span><span class="post-meta-date meta-item">
                                 <span class="svg-icon icon-clock"></span><time class="timeago" datetime="2020-02-19">2020-02-19</time>
                             </span><span class="post-meta-words meta-item">
-                                <span class="svg-icon icon-pencil"></span>约 926 字
+                                <span class="svg-icon icon-pencil"></span>约 927 字
                             </span>
                             <span class="post-meta-reading meta-item">
                                 <span class="svg-icon icon-stopwatch"></span>预计阅读 2 分钟
@@ -215,7 +215,7 @@
     
 <img loading="lazy" decoding="async"
          class="render-image"
-         src="http://pic.rgsc.top/2020-12-04-62b8cb8d-Jietu20201204-093200.png"
+         src="https://pic.rgsc.top/2020-12-04-62b8cb8d-Jietu20201204-093200.png"
          alt="七牛云对象存储"
          title="2020-12-04-62b8cb8d-Jietu20201204-093200.png"
     /></p>
@@ -246,7 +246,7 @@
     
 <img loading="lazy" decoding="async"
          class="render-image"
-         src="http://pic.rgsc.top/2020-12-04-bef87e47-%3aUsers%3asat%3aPictures%3aclip%3aJietu20201204-093958.png"
+         src="https://pic.rgsc.top/2020-12-04-bef87e47-%3aUsers%3asat%3aPictures%3aclip%3aJietu20201204-093958.png"
          alt="配置示例图片"
          title="2020-12-04-bef87e47-%3aUsers%3asat%3aPictures%3aclip%3aJietu20201204-093958.png"
     /></p>
@@ -306,7 +306,7 @@
     <span class="k">if</span> <span class="o">[</span> -f <span class="nv">$f</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
         <span class="nv">Key</span><span class="o">=</span><span class="k">$(</span>date +%F<span class="k">)</span>-<span class="k">$(</span>date +%s <span class="p">|</span> md5 <span class="p">|</span> head -c 8<span class="k">)</span>-<span class="k">$(</span>basename <span class="nv">$f</span><span class="k">)</span>
         /opt/local/bin/qshell fput nicegeek-md-pic <span class="s2">&#34;</span><span class="nv">$Key</span><span class="s2">&#34;</span> <span class="nv">$f</span>
-        <span class="nv">link</span><span class="o">=</span><span class="s2">&#34;http://pic.rgsc.top/</span><span class="k">$(</span>urlencode <span class="nv">$Key</span><span class="k">)</span><span class="s2">&#34;</span>
+        <span class="nv">link</span><span class="o">=</span><span class="s2">&#34;https://pic.rgsc.top/</span><span class="k">$(</span>urlencode <span class="nv">$Key</span><span class="k">)</span><span class="s2">&#34;</span>
         <span class="k">if</span> <span class="o">[</span> <span class="s2">&#34;</span><span class="nv">$links</span><span class="s2">&#34;</span> <span class="o">==</span> <span class="s2">&#34;&#34;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
             <span class="nv">links</span><span class="o">=</span><span class="nv">$link</span>
         <span class="k">else</span>
@@ -333,10 +333,10 @@
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nv">link</span><span class="o">=</span><span class="s2">&#34;http://pic.rgsc.top/</span><span class="k">$(</span>urlencode <span class="nv">$Key</span><span class="k">)</span><span class="s2">&#34;</span>
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nv">link</span><span class="o">=</span><span class="s2">&#34;https://pic.rgsc.top/</span><span class="k">$(</span>urlencode <span class="nv">$Key</span><span class="k">)</span><span class="s2">&#34;</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>这一行中的“http://pic.rgsc.top/”要修改成对象存储空间绑定的域名。<strong>七牛提供的测试域名1个月就失效了</strong>，可以自己买一个并备案，这个有点麻烦，可以用<a href="https://wanwang.aliyun.com/?source=5176.11533457&amp;userCode=drns2vxc" target="_blank" rel="noopener noreffer"><em>阿里云</em></a>注册域名，进行备案。</p>
+</div><p>这一行中的“https://pic.rgsc.top/”要修改成对象存储空间绑定的域名。<strong>七牛提供的测试域名1个月就失效了</strong>，可以自己买一个并备案，这个有点麻烦，可以用<a href="https://wanwang.aliyun.com/?source=5176.11533457&amp;userCode=drns2vxc" target="_blank" rel="noopener noreffer"><em>阿里云</em></a>注册域名，进行备案。</p>
 <h3 id="apple-script通知内容" class="headerLink"><a href="#apple-script%e9%80%9a%e7%9f%a5%e5%86%85%e5%ae%b9" class="header-mark"></a>Apple Script通知内容</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -355,8 +355,8 @@
     
 <img loading="lazy" decoding="async"
          class="render-image"
-         src="http://pic.rgsc.top/2020-12-04-3030f9e2-Jietu20201204-100232.png"
-         alt="http://pic.rgsc.top/2020-12-04-3030f9e2-Jietu20201204-100232.png"
+         src="https://pic.rgsc.top/2020-12-04-3030f9e2-Jietu20201204-100232.png"
+         alt="https://pic.rgsc.top/2020-12-04-3030f9e2-Jietu20201204-100232.png"
          title="2020-12-04-3030f9e2-Jietu20201204-100232.png"
     /></p>
 <p>打开“系统偏好设置” -&gt; “键盘” -&gt; &ldquo;快捷键&rdquo; -&gt; &ldquo;服务&rdquo; ， 找到刚刚用automator 创建的服务名称，我的名称是 “ 上传到七牛云-md” ， 然后将快捷键设置为 ⌘+U。</p>
@@ -397,7 +397,7 @@
     </div>
 
 </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.83.1">Hugo</a> 强力驱动 | 主题 - <a href="https://ublogger.netlify.app/?utm_source=http://nicegeeker.gitHub.io/&utm_medium=footer&utm_campaign=config&utm_term=2.0.1" target="_blank" title="uBlogger 2.0.1">uBlogger</a>
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.84.0">Hugo</a> 强力驱动 | 主题 - <a href="https://ublogger.netlify.app/?utm_source=http://nicegeeker.gitHub.io/&utm_medium=footer&utm_campaign=config&utm_term=2.0.1" target="_blank" title="uBlogger 2.0.1">uBlogger</a>
                 </div><div class="footer-line"><i class="svg-icon icon-copyright"></i><span>2021</span></div>
         </div>
     </footer></div>
