@@ -281,7 +281,7 @@ enableEmoji = true
       keepStatic = false
       # whether to make the table of the contents in the sidebar automatically collapsed
       # 是否使侧边目录自动折叠展开
-      auto = true
+      auto = false
     # Code config
     # 代码配置
     [params.page.code]
@@ -372,7 +372,7 @@ enableEmoji = true
     pre = ""
     # you can add extra information after the name (HTML format is supported), such as icons
     post = ""
-    name = "Posts"
+    name = "博客文章"
     url = "/posts/"
     # title will be shown when you hover on this menu link
     title = ""
@@ -381,7 +381,7 @@ enableEmoji = true
     identifier = "tags"
     pre = ""
     post = ""
-    name = "Tags"
+    name = "标签"
     url = "/tags/"
     title = ""
     weight = 2
@@ -389,7 +389,7 @@ enableEmoji = true
     identifier = "categories"
     pre = ""
     post = ""
-    name = "Categories"
+    name = "分类"
     url = "/categories/"
     title = ""
     weight = 3
