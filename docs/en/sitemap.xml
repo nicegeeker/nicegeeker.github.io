@@ -2,6 +2,15 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
+            <loc>http://nicegeeker.gitHub.io/en/about/</loc><lastmod>2021-06-19T16:59:40&#43;08:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="http://nicegeeker.gitHub.io/about/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="http://nicegeeker.gitHub.io/en/about/"
+                    /></url><url>
             <loc>http://nicegeeker.gitHub.io/en/categories/</loc><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
