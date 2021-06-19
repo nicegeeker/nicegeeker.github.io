@@ -3,7 +3,21 @@
         <title>research - 分类 - 我的技术博客</title>
         <link>http://nicegeeker.gitHub.io/categories/research/</link>
         <description>research - 分类 - 我的技术博客</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 19 Jun 2021 10:42:17 &#43;0800</lastBuildDate><atom:link href="http://nicegeeker.gitHub.io/categories/research/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 19 Jun 2021 16:02:10 &#43;0800</lastBuildDate><atom:link href="http://nicegeeker.gitHub.io/categories/research/" rel="self" type="application/rss+xml" /><item>
+    <title>书籍推荐《Data-driven Science and Engineering》——Machine Learning, Dynamical Systems, and Control</title>
+    <link>http://nicegeeker.gitHub.io/posts/book-data-driven-science-and-engineering/</link>
+    <pubDate>Sat, 19 Jun 2021 16:02:10 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://nicegeeker.gitHub.io/posts/book-data-driven-science-and-engineering/</guid>
+    <description><![CDATA[<p>数据驱动的工程实现，动态系统控制</p>]]></description>
+</item><item>
+    <title>用latex写伪代码</title>
+    <link>http://nicegeeker.gitHub.io/posts/sudo-code-with-latex/</link>
+    <pubDate>Sat, 19 Jun 2021 15:34:56 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://nicegeeker.gitHub.io/posts/sudo-code-with-latex/</guid>
+    <description><![CDATA[<p>个人推荐使用Algorithm2e在$latex$中编写伪代码。</p>]]></description>
+</item><item>
     <title>IEEE期刊投稿公式编辑方法</title>
     <link>http://nicegeeker.gitHub.io/posts/how-to-edit-equation-for-ieee/</link>
     <pubDate>Sat, 19 Jun 2021 10:42:17 &#43;0800</pubDate>

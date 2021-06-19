@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noodp"/><title>用latex写伪代码 | 我的技术博客</title><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://nicegeeker.gitHub.io/posts/sudo-code-with-latex/featured-image.png"/>
+<meta name="twitter:title" content="用latex写伪代码"/>
+<meta name="twitter:description" content="用latex写伪代码"/><meta name="Description" content="用latex写伪代码"><meta property="og:title" content="用latex写伪代码" />
+<meta property="og:description" content="用latex写伪代码" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://nicegeeker.gitHub.io/posts/sudo-code-with-latex/" /><meta property="og:image" content="http://nicegeeker.gitHub.io/posts/sudo-code-with-latex/featured-image.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-06-19T15:34:56&#43;08:00" />
+<meta property="article:modified_time" content="2021-06-19T15:35:36&#43;08:00" /><meta property="og:site_name" content="我的技术博客" />
+
+<meta name="application-name" content="uBlogger">
+<meta name="apple-mobile-web-app-title" content="uBlogger"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+        <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://nicegeeker.gitHub.io/posts/sudo-code-with-latex/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/lib/prismjs/prism.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "用latex写伪代码",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/nicegeeker.gitHub.io\/posts\/sudo-code-with-latex\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "http:\/\/nicegeeker.gitHub.io\/posts\/sudo-code-with-latex\/featured-image.png",
+                            "width":  803 ,
+                            "height":  394 
+                        }],"genre": "posts","keywords": "latex","wordCount":  485 ,
+        "url": "http:\/\/nicegeeker.gitHub.io\/posts\/sudo-code-with-latex\/","datePublished": "2021-06-19T15:34:56+08:00","dateModified": "2021-06-19T15:35:36+08:00","description": "用latex写伪代码"
+    }
+    </script><script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "主页",
+            "item": "http:\/\/nicegeeker.gitHub.io\/"
+        },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "research",
+            "item": "http://nicegeeker.gitHub.io/categories/research/"
+        },{
+                "@type": "ListItem",
+                "position": 3,
+                "name": "用latex写伪代码"
+            }]
+    }
+</script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header>
+    <div class="desktop header" id="header-desktop">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="我的技术博客" class="header-logo logo-svg"><span class="header-title-pre"><i class='fas fa-pencil-alt fa-fw'></i></span>NiceGeek</a>
+            </div>
+            <div class="menu">
+                <nav>
+                    <h2 class="display-hidden">Основная навигация</h2>
+                    <ul class="menu-inner"><li>
+                            <a class="menu-item" href="/posts/"> 博客文章 </a>
+                        </li><li>
+                            <a class="menu-item" href="/tags/"> 标签 </a>
+                        </li><li>
+                            <a class="menu-item" href="/categories/"> 分类 </a>
+                        </li></ul>
+                </nav><span class="menu-item delimiter"></span><span onclick="javascript:void(0);" class="menu-item language" title="选择语言">简体中文<select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/posts/sudo-code-with-latex/" selected>简体中文</option></select>
+                </span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <span class="svg-icon icon-search"></span>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <span class="svg-icon icon-cancel"></span>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <span class="svg-icon icon-loading"></span>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <span class="svg-icon icon-moon"></span>
+                </a>
+            </div>
+        </div>
+    </div><div class="mobile header" id="header-mobile">
+        <div class="header-container">
+            <div class="header-wrapper">
+                <div class="header-title">
+                    <a href="/" title="我的技术博客" class="header-logo"><span class="header-title-pre"><i class='fas fa-pencil-alt fa-fw'></i></span>NiceGeek</a>
+                </div>
+                <div class="menu-toggle" id="menu-toggle-mobile">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+            <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                        <div class="search mobile" id="search-mobile">
+                            <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                                <span class="svg-icon icon-search"></span>
+                            </a>
+                            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                                <span class="svg-icon icon-cancel"></span>
+                            </a>
+                            <span class="search-button search-loading" id="search-loading-mobile">
+                                <span class="svg-icon icon-loading"></span>
+                            </span>
+                        </div>
+                        <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                            取消
+                        </a>
+                    </div><nav>
+                    <h2 class="display-hidden">Основная навигация</h2>
+                    <ul><li>
+                            <a class="menu-item" href="/posts/" title="">博客文章</a>
+                        </li><li>
+                            <a class="menu-item" href="/tags/" title="">标签</a>
+                        </li><li>
+                            <a class="menu-item" href="/categories/" title="">分类</a>
+                        </li></ul>
+                </nav>
+                <a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <span class="svg-icon icon-moon"></span>
+                </a><span onclick="javascript:void(0);" class="menu-item" title="选择语言">简体中文<select class="language-select" onchange="location = this.value;"><option value="/posts/sudo-code-with-latex/" selected>简体中文</option></select>
+                    </span></div>
+        </div>
+    </div><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div></header><main class="main">
+<div class="container content-article page-toc theme-classic"><div class="toc" id="toc-auto">
+            <div class="toc-title">目录</div>
+            <div class="toc-content always-active" id="toc-content-auto"></div>
+        </div>
+
+    
+    
+    <article>
+    
+
+        <header class="header-post">
+
+            
+
+            
+            <div class="post-title">
+
+                    <div class="post-all-meta">
+                        <nav class="breadcrumbs">
+    <ol>
+        <li><a href="/">主页 </a></li><li><a href="/categories/research/">research </a></li><li>用latex写伪代码</li>
+    </ol>
+</nav>
+                        <h1 class="single-title flipInX">用latex写伪代码</h1><div class="post-meta summary-post-meta"><span class="post-category meta-item">
+                                <a href="/categories/research/"><span class="svg-icon icon-folder"></span>research</a>
+                            </span><span class="post-meta-date meta-item">
+                                <span class="svg-icon icon-clock"></span><time class="timeago" datetime="2021-06-19">2021-06-19</time>
+                            </span><span class="post-meta-words meta-item">
+                                <span class="svg-icon icon-pencil"></span>约 485 字
+                            </span>
+                            <span class="post-meta-reading meta-item">
+                                <span class="svg-icon icon-stopwatch"></span>预计阅读 1 分钟
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                </header>
+
+        <div class="article-post toc-start">
+
+            <div class="content-block content-block-first content-block-position">
+
+                <div class="post single"><div class="image-theme-classic">
+                        <img src="http://nicegeeker.gitHub.io/posts/sudo-code-with-latex/featured-image.png" style="width: 100%">
+                    </div><div class="details toc" id="toc-static"  data-kept="">
+                        <div class="details-summary toc-title">
+                            <span>目录</span>
+                        </div>
+                        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#括号中的参数定义">括号中的参数定义</a></li>
+        <li><a href="#基本语法">基本语法</a></li>
+        <li><a href="#基本格式">基本格式</a></li>
+        <li><a href="#示例">示例</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+                    </div><p>个人推荐使用Algorithm2e在$latex$中编写伪代码。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\usepackage</span><span class="na">[ruled, linesnumbered, vlined]</span><span class="nb">{</span>algorithm2e<span class="nb">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="括号中的参数定义" class="headerLink"><a href="#%e6%8b%ac%e5%8f%b7%e4%b8%ad%e7%9a%84%e5%8f%82%e6%95%b0%e5%ae%9a%e4%b9%89" class="header-mark"></a>括号中的参数定义</h3><ul>
+<li>ruled: 让标题显示在上面，否则算法标题在下面</li>
+<li>linesnumbered: 让算法中显示行号</li>
+<li>vlined: 显示代码块的竖线</li>
+</ul>
+<h3 id="基本语法" class="headerLink"><a href="#%e5%9f%ba%e6%9c%ac%e8%af%ad%e6%b3%95" class="header-mark"></a>基本语法</h3><table>
+<thead>
+<tr>
+<th style="text-align:left">代码</th>
+<th style="text-align:left">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">\;</td>
+<td style="text-align:left">在行末加分号并换行</td>
+</tr>
+<tr>
+<td style="text-align:left">\caption{}</td>
+<td style="text-align:left">插入标题</td>
+</tr>
+<tr>
+<td style="text-align:left">\SetKwData{命令}{显示值}</td>
+<td style="text-align:left">设置关键字</td>
+</tr>
+<tr>
+<td style="text-align:left">\SetKwInOut{命令}{显示值}</td>
+<td style="text-align:left">设置关键字</td>
+</tr>
+<tr>
+<td style="text-align:left">\SetKwFunction{命令}{显示值}</td>
+<td style="text-align:left">设置关键字</td>
+</tr>
+<tr>
+<td style="text-align:left">\for{条件}{循环语句}</td>
+<td style="text-align:left">for 条件 do</td>
+</tr>
+<tr>
+<td style="text-align:left">\if{条件}{语句}</td>
+<td style="text-align:left">if</td>
+</tr>
+<tr>
+<td style="text-align:left">\while{条件}{循环语句}</td>
+<td style="text-align:left">while</td>
+</tr>
+<tr>
+<td style="text-align:left">\tcc{注释}</td>
+<td style="text-align:left">/* 注释 */</td>
+</tr>
+<tr>
+<td style="text-align:left">\tcp{注释}</td>
+<td style="text-align:left">// 注释</td>
+</tr>
+<tr>
+<td style="text-align:left">\eif{条件}{肯定语句}{否定语句}</td>
+<td style="text-align:left">if 条件 then 肯定语句 else 否定语句 end</td>
+</tr>
+<tr>
+<td style="text-align:left">\BlankLine</td>
+<td style="text-align:left">空行</td>
+</tr>
+<tr>
+<td style="text-align:left">\leftarrow</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="基本格式" class="headerLink"><a href="#%e5%9f%ba%e6%9c%ac%e6%a0%bc%e5%bc%8f" class="header-mark"></a>基本格式</h3><p>1.通常开始时：给出算法的输出输出（或者Data和Result）
+2.空一行，列出一些初始化操作
+3.算法主体</p>
+<h3 id="示例" class="headerLink"><a href="#%e7%a4%ba%e4%be%8b" class="header-mark"></a>示例</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\begin</span><span class="nb">{</span>algorithm<span class="nb">}</span>
+    <span class="k">\SetKwData</span><span class="nb">{</span>Left<span class="nb">}{</span>left<span class="nb">}</span>
+    <span class="k">\SetKwData</span><span class="nb">{</span>This<span class="nb">}{</span>this<span class="nb">}</span>
+    <span class="k">\SetKwData</span><span class="nb">{</span>Up<span class="nb">}{</span>up<span class="nb">}</span> 
+    <span class="k">\SetKwFunction</span><span class="nb">{</span>Union<span class="nb">}{</span>Union<span class="nb">}</span>
+    <span class="k">\SetKwFunction</span><span class="nb">{</span>FindCompress<span class="nb">}{</span>FindCompress<span class="nb">}</span> 
+    <span class="k">\SetKwInOut</span><span class="nb">{</span>Input<span class="nb">}{</span>input<span class="nb">}</span>
+    <span class="k">\SetKwInOut</span><span class="nb">{</span>Output<span class="nb">}{</span>output<span class="nb">}</span> 
+    
+    <span class="k">\Input</span><span class="nb">{</span>A bitmap <span class="s">$</span><span class="nb">Im</span><span class="s">$</span> of size <span class="s">$</span><span class="nb">w</span><span class="nv">\times</span><span class="nb"> l</span><span class="s">$</span><span class="nb">}</span> 
+    <span class="k">\Output</span><span class="nb">{</span>A partition of the bitmap<span class="nb">}</span> 
+    <span class="k">\BlankLine</span> 
+    
+    <span class="k">\emph</span><span class="nb">{</span>special treatment of the first line<span class="nb">}</span><span class="k">\;</span> 
+    <span class="k">\For</span><span class="nb">{</span><span class="s">$</span><span class="nb">i</span><span class="nv">\leftarrow</span><span class="nb"> </span><span class="m">2</span><span class="s">$</span> <span class="k">\KwTo</span> <span class="s">$</span><span class="nb">l</span><span class="s">$</span><span class="nb">}</span>
+    <span class="nb">{</span> 
+        <span class="k">\emph</span><span class="nb">{</span>special treatment of the first element of line <span class="s">$</span><span class="nb">i</span><span class="s">$</span><span class="nb">}</span><span class="k">\;</span>
+        <span class="k">\For</span><span class="nb">{</span><span class="s">$</span><span class="nb">j</span><span class="nv">\leftarrow</span><span class="nb"> </span><span class="m">2</span><span class="s">$</span> <span class="k">\KwTo</span> <span class="s">$</span><span class="nb">w</span><span class="s">$</span><span class="nb">}</span>
+            <span class="nb">{</span><span class="k">\label</span><span class="nb">{</span>forins<span class="nb">}</span> 
+            <span class="k">\Left</span><span class="s">$</span><span class="nv">\leftarrow</span><span class="s">$</span> <span class="k">\FindCompress</span><span class="nb">{</span><span class="s">$</span><span class="nb">Im</span><span class="o">[</span><span class="nb">i,j</span><span class="o">-</span><span class="m">1</span><span class="o">]</span><span class="s">$</span><span class="nb">}</span><span class="k">\;</span> 
+            <span class="k">\Up</span><span class="s">$</span><span class="nv">\leftarrow</span><span class="s">$</span> <span class="k">\FindCompress</span><span class="nb">{</span><span class="s">$</span><span class="nb">Im</span><span class="o">[</span><span class="nb">i</span><span class="o">-</span><span class="m">1</span><span class="nb">,</span><span class="o">]</span><span class="s">$</span><span class="nb">}</span><span class="k">\;</span> 
+            <span class="k">\This</span><span class="s">$</span><span class="nv">\leftarrow</span><span class="s">$</span> <span class="k">\FindCompress</span><span class="nb">{</span><span class="s">$</span><span class="nb">Im</span><span class="o">[</span><span class="nb">i,j</span><span class="o">]</span><span class="s">$</span><span class="nb">}</span><span class="k">\;</span> 
+            <span class="k">\If</span>(<span class="k">\tcp*</span><span class="na">[h]</span><span class="nb">{</span>O(<span class="k">\Left</span>,<span class="k">\This</span>)==1<span class="nb">}</span>)<span class="nb">{</span><span class="k">\Left</span> compatible with <span class="k">\This</span><span class="nb">}</span>
+            <span class="nb">{</span><span class="k">\label</span><span class="nb">{</span>lt<span class="nb">}</span> <span class="k">\lIf</span><span class="nb">{</span><span class="k">\Left</span> <span class="s">$</span><span class="nb">&lt;</span><span class="s">$</span> <span class="k">\This</span><span class="nb">}{</span><span class="k">\Union</span><span class="nb">{</span><span class="k">\Left</span>,<span class="k">\This</span><span class="nb">}}</span>
+            <span class="k">\lElse</span><span class="nb">{</span><span class="k">\Union</span><span class="nb">{</span><span class="k">\This</span>,<span class="k">\Left</span><span class="nb">}}</span> <span class="nb">}</span> 
+            <span class="k">\If</span>(<span class="k">\tcp*</span><span class="na">[f]</span><span class="nb">{</span>O(<span class="k">\Up</span>,<span class="k">\This</span>)==1<span class="nb">}</span>)
+            <span class="nb">{</span><span class="k">\Up</span> compatible with <span class="k">\This</span><span class="nb">}</span>
+            <span class="nb">{</span><span class="k">\label</span><span class="nb">{</span>ut<span class="nb">}</span> <span class="k">\lIf</span><span class="nb">{</span><span class="k">\Up</span> <span class="s">$</span><span class="nb">&lt;</span><span class="s">$</span> <span class="k">\This</span><span class="nb">}{</span><span class="k">\Union</span><span class="nb">{</span><span class="k">\Up</span>,<span class="k">\This</span><span class="nb">}}</span> 
+            
+            <span class="k">\tcp</span><span class="nb">{</span><span class="k">\This</span> is put under <span class="k">\Up</span> to keep tree as flat as possible<span class="nb">}</span><span class="k">\label</span><span class="nb">{</span>cmt<span class="nb">}</span> 
+            <span class="k">\lElse</span><span class="nb">{</span><span class="k">\Union</span><span class="nb">{</span><span class="k">\This</span>,<span class="k">\Up</span><span class="nb">}}</span>
+            <span class="k">\tcp*</span><span class="na">[h]</span><span class="nb">{</span><span class="k">\This</span> linked to <span class="k">\Up</span><span class="nb">}</span><span class="k">\label</span><span class="nb">{</span>lelse<span class="nb">}</span> <span class="nb">}</span> 
+     <span class="nb">}</span> 
+            
+            <span class="k">\lForEach</span><span class="nb">{</span>element <span class="s">$</span><span class="nb">e</span><span class="s">$</span> of the line <span class="s">$</span><span class="nb">i</span><span class="s">$</span><span class="nb">}{</span><span class="k">\FindCompress</span><span class="nb">{</span>p<span class="nb">}}</span> <span class="nb">}</span>
+            <span class="k">\caption</span><span class="nb">{</span>disjoint decomposition<span class="nb">}</span>
+    
+    <span class="k">\label</span><span class="nb">{</span>algo<span class="nb">_</span>disjdecomp<span class="nb">}</span> 
+    <span class="k">\end</span><span class="nb">{</span>algorithm<span class="nb">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>
+
+
+
+    
+<img loading="lazy" decoding="async"
+         class="render-image"
+         src="https://pic.rgsc.top/2021-06-19-94df7b37-algorithm.png"
+         alt="算法示例"
+         title="2021-06-19-94df7b37-algorithm.png"
+    /></p></div><footer>
+                        <div class="post">
+
+
+<div class="post-share"><div class="share-link">
+        <a class="share-icon share-twitter" href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="http://nicegeeker.gitHub.io/posts/sudo-code-with-latex/" data-title="用latex写伪代码" data-hashtags="latex"><span class="svg-social-icon icon-twitter"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-facebook" href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="http://nicegeeker.gitHub.io/posts/sudo-code-with-latex/" data-hashtag="latex"><span class="svg-social-icon icon-facebook"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-linkedin" href="javascript:void(0);" title="分享到 Linkedin" data-sharer="linkedin" data-url="http://nicegeeker.gitHub.io/posts/sudo-code-with-latex/"><span class="svg-social-icon icon-linkedin"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-reddit" href="javascript:void(0);" title="分享到 Reddit" data-sharer="reddit" data-url="http://nicegeeker.gitHub.io/posts/sudo-code-with-latex/"><span class="svg-social-icon icon-reddit"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-weibo" href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://nicegeeker.gitHub.io/posts/sudo-code-with-latex/" data-title="用latex写伪代码"><span class="svg-social-icon icon-weibo"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-evernote" href="javascript:void(0);" title="分享到 Evernote" data-sharer="evernote" data-url="http://nicegeeker.gitHub.io/posts/sudo-code-with-latex/" data-title="用latex写伪代码"><span class="svg-social-icon icon-evernote"></span></a>
+    </div></div>
+
+
+
+
+
+
+<div class="post-tags"><a href="/tags/latex/" class="tag">latex</a></div></div>
+                </footer></div>
+
+        <div id="toc-final"></div>
+        </div>
+
+    
+    </article>
+    <section class="page single comments content-block-position">
+        <h1 class="display-hidden">Комментарии</h1><div id="comments"><div id="gitalk" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://github.com/gitalk/gitalk"></a>Gitalk</a>.
+            </noscript></div></section></div>
+
+</main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.84.0">Hugo</a> 强力驱动 | 主题 - <a href="https://ublogger.netlify.app/?utm_source=http://nicegeeker.gitHub.io/&utm_medium=footer&utm_campaign=config&utm_term=2.0.1" target="_blank" title="uBlogger 2.0.1">uBlogger</a>
+                </div><div class="footer-line"><i class="svg-icon icon-copyright"></i><span>2021</span></div>
+        </div>
+    </footer></div>
+
+        <aside id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="svg-icon icon-arrow-up"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="svg-icon icon-comments-fixed"></i>
+            </a>
+        </aside><link rel="stylesheet" href="/lib/gitalk/gitalk.min.css"><script src="/lib/gitalk/gitalk.min.js"></script><script src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script src="/lib/autocomplete/autocomplete.min.js"></script><script src="/lib/algoliasearch/algoliasearch-lite.umd.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script src="/lib/prismjs/prism.js"></script><script>window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{"gitalk":{"admin":["nicegeeker"],"clientID":"79a74a80d23f7a1cc024","clientSecret":"b7df2fdfb64723328875de7201308c7b5c526970","id":"2021-06-19T15:34:56+08:00","owner":"nicegeeker","repo":"blog_comment","title":"用latex写伪代码"}},"search":{"algoliaAppID":"6V7XBE70KQ","algoliaIndex":"my_blog","algoliaSearchKey":"9fbd83dc24ee0abf26f19dda65a1b0c0","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":30,"type":"algolia"}};</script><script src="/js/theme.min.js"></script></body>
+</html>

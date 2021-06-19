@@ -365,6 +365,19 @@ enableEmoji = true
       Trello = false
       Mix = false
 
+  # Comment config
+  # 评论系统设置
+  [params.comment]
+    enable = true
+    # Gitalk comment config (https://github.com/gitalk/gitalk)
+    # Gitalk 评论系统设置 (https://github.com/gitalk/gitalk)
+    [params.comment.gitalk]
+      enable = true
+      owner = "nicegeeker"
+      repo = "blog_comment"
+      clientId = "79a74a80d23f7a1cc024"
+      clientSecret = "b7df2fdfb64723328875de7201308c7b5c526970"
+
 [languages]
   [languages.en]
     weight = 2
@@ -462,6 +475,7 @@ enableEmoji = true
   [markup.tableOfContents]
     startLevel = 2
     endLevel = 6
+
 
 
 [outputs]

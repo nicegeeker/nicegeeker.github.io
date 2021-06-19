@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>学习资料 - 标签 - 我的技术博客</title>
+        <link>http://nicegeeker.gitHub.io/tags/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/</link>
+        <description>学习资料 - 标签 - 我的技术博客</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 19 Jun 2021 16:02:10 &#43;0800</lastBuildDate><atom:link href="http://nicegeeker.gitHub.io/tags/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/" rel="self" type="application/rss+xml" /><item>
+    <title>书籍推荐《Data-driven Science and Engineering》——Machine Learning, Dynamical Systems, and Control</title>
+    <link>http://nicegeeker.gitHub.io/posts/book-data-driven-science-and-engineering/</link>
+    <pubDate>Sat, 19 Jun 2021 16:02:10 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://nicegeeker.gitHub.io/posts/book-data-driven-science-and-engineering/</guid>
+    <description><![CDATA[<p>数据驱动的工程实现，动态系统控制</p>]]></description>
+</item></channel>
+</rss>
