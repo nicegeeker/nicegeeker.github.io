@@ -1,9 +1,9 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>technology - 分类 - NiceGeek</title>
+        <title>technology - 分类 - 我的技术博客</title>
         <link>http://nicegeeker.gitHub.io/categories/technology/</link>
-        <description>technology - 分类 - NiceGeek</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 19 Feb 2020 09:27:56 &#43;0800</lastBuildDate><atom:link href="http://nicegeeker.gitHub.io/categories/technology/" rel="self" type="application/rss+xml" /><item>
+        <description>technology - 分类 - 我的技术博客</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 19 Feb 2020 09:27:56 &#43;0800</lastBuildDate><atom:link href="http://nicegeeker.gitHub.io/categories/technology/" rel="self" type="application/rss+xml" /><item>
     <title>七牛云qshell工具和mac的automator制作永久免费的markdown图床</title>
     <link>http://nicegeeker.gitHub.io/posts/markdown-pictures-bed/</link>
     <pubDate>Wed, 19 Feb 2020 09:27:56 &#43;0800</pubDate>

@@ -1,20 +1,16 @@
-<urlset
-    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-    xmlns:xhtml="http://www.w3.org/1999/xhtml"
-    ><url>
-            <loc>http://nicegeeker.gitHub.io/posts/how-to-edit-equation-for-ieee/</loc><lastmod>2021-06-19T10:42:17&#43;08:00</lastmod></url><url>
-            <loc>http://nicegeeker.gitHub.io/posts/markdown-pictures-bed/</loc><lastmod>2020-03-04T16:29:41&#43;08:00</lastmod></url><url>
-            <loc>http://nicegeeker.gitHub.io/posts/tech-gpg-key-for-secret-transmission/</loc><lastmod>2020-03-04T16:29:41&#43;08:00</lastmod></url><url>
-            <loc>http://nicegeeker.gitHub.io/posts/manage-password-with-pass/</loc><lastmod>2020-03-04T16:29:41&#43;08:00</lastmod></url><url>
-            <loc>http://nicegeeker.gitHub.io/categories/</loc><lastmod>2021-06-19T10:42:17&#43;08:00</lastmod></url><url>
-            <loc>http://nicegeeker.gitHub.io/tags/latex/</loc><lastmod>2021-06-19T10:42:17&#43;08:00</lastmod></url><url>
-            <loc>http://nicegeeker.gitHub.io/</loc><lastmod>2021-06-19T10:42:17&#43;08:00</lastmod></url><url>
-            <loc>http://nicegeeker.gitHub.io/posts/</loc><lastmod>2021-06-19T10:42:17&#43;08:00</lastmod></url><url>
-            <loc>http://nicegeeker.gitHub.io/categories/research/</loc><lastmod>2021-06-19T10:42:17&#43;08:00</lastmod></url><url>
-            <loc>http://nicegeeker.gitHub.io/tags/</loc><lastmod>2021-06-19T10:42:17&#43;08:00</lastmod></url><url>
-            <loc>http://nicegeeker.gitHub.io/tags/%E5%85%AC%E5%BC%8F/</loc><lastmod>2021-06-19T10:42:17&#43;08:00</lastmod></url><url>
-            <loc>http://nicegeeker.gitHub.io/tags/bolg/</loc><lastmod>2020-03-04T16:29:41&#43;08:00</lastmod></url><url>
-            <loc>http://nicegeeker.gitHub.io/tags/gpg-key/</loc><lastmod>2020-03-04T16:29:41&#43;08:00</lastmod></url><url>
-            <loc>http://nicegeeker.gitHub.io/tags/markdown/</loc><lastmod>2020-03-04T16:29:41&#43;08:00</lastmod></url><url>
-            <loc>http://nicegeeker.gitHub.io/tags/secret/</loc><lastmod>2020-03-04T16:29:41&#43;08:00</lastmod></url><url>
-            <loc>http://nicegeeker.gitHub.io/categories/technology/</loc><lastmod>2020-03-04T16:29:41&#43;08:00</lastmod></url></urlset>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <sitemap>
+    <loc>http://nicegeeker.gitHub.io/zh-cn/sitemap.xml</loc>
+    
+      <lastmod>2021-06-19T10:42:17+08:00</lastmod>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>http://nicegeeker.gitHub.io/en/sitemap.xml</loc>
+    
+  </sitemap>
+  
+</sitemapindex>
