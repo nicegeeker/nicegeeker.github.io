@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>research - 分类 - NiceGeek</title>
+        <link>http://nicegeeker.gitHub.io/categories/research/</link>
+        <description>research - 分类 - NiceGeek</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 19 Jun 2021 10:42:17 &#43;0800</lastBuildDate><atom:link href="http://nicegeeker.gitHub.io/categories/research/" rel="self" type="application/rss+xml" /><item>
+    <title>IEEE期刊投稿公式编辑方法</title>
+    <link>http://nicegeeker.gitHub.io/posts/how-to-edit-equation-for-ieee/</link>
+    <pubDate>Sat, 19 Jun 2021 10:42:17 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://nicegeeker.gitHub.io/posts/how-to-edit-equation-for-ieee/</guid>
+    <description><![CDATA[<p>本文介绍了向IEEE期刊投稿时，怎么优雅地编辑公式。</p>]]></description>
+</item></channel>
+</rss>

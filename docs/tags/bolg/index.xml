@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>bolg - 标签 - NiceGeek</title>
+        <link>http://nicegeeker.gitHub.io/tags/bolg/</link>
+        <description>bolg - 标签 - NiceGeek</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 19 Feb 2020 09:27:56 &#43;0800</lastBuildDate><atom:link href="http://nicegeeker.gitHub.io/tags/bolg/" rel="self" type="application/rss+xml" /><item>
+    <title>七牛云qshell工具和mac的automator制作永久免费的markdown图床</title>
+    <link>http://nicegeeker.gitHub.io/posts/markdown-pictures-bed/</link>
+    <pubDate>Wed, 19 Feb 2020 09:27:56 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://nicegeeker.gitHub.io/posts/markdown-pictures-bed/</guid>
+    <description><![CDATA[<p>用markdown写文档时，用图片在本地的相对位置，可以正常显示，但是当需要上传至自己的博客时，图片就看不到了。利用七牛云的对象存储服务和mac的automator功能，打造一个可以一键上传图片文件，并自动将链接地址保存到粘贴板的功能。具体步骤如下：</p>]]></description>
+</item></channel>
+</rss>

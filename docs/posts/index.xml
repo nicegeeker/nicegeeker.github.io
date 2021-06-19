@@ -1,27 +1,36 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>所有文章 - NiceGeek</title>
-        <link>http://example.org/posts/</link>
+        <link>http://nicegeeker.gitHub.io/posts/</link>
         <description>所有文章 | NiceGeek</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 18 Jun 2021 21:28:36 &#43;0800</lastBuildDate><atom:link href="http://example.org/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>如何生成GPG key用于加密传输及Git使用举例</title>
-    <link>http://example.org/posts/tech-gpg-key-for-secret-transmission/</link>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 19 Jun 2021 10:42:17 &#43;0800</lastBuildDate><atom:link href="http://nicegeeker.gitHub.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>IEEE期刊投稿公式编辑方法</title>
+    <link>http://nicegeeker.gitHub.io/posts/how-to-edit-equation-for-ieee/</link>
+    <pubDate>Sat, 19 Jun 2021 10:42:17 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://nicegeeker.gitHub.io/posts/how-to-edit-equation-for-ieee/</guid>
+    <description><![CDATA[<p>本文介绍了向IEEE期刊投稿时，怎么优雅地编辑公式。</p>]]></description>
+</item><item>
+    <title>七牛云qshell工具和mac的automator制作永久免费的markdown图床</title>
+    <link>http://nicegeeker.gitHub.io/posts/markdown-pictures-bed/</link>
     <pubDate>Wed, 19 Feb 2020 09:27:56 &#43;0800</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/tech-gpg-key-for-secret-transmission/</guid>
-    <description><![CDATA[GPG：GNU Privacy Guard，a great password generator
-GPG应用程序允许您加密和解密信息。它基于使用一对密钥，一个公钥和一个私有密钥。使用一个密钥加密的数据只能用另一个密钥解密。
- 要加密发送给你的邮件，可使用你的公钥创建，只能使用你的私钥解锁。
- 要对信息进行签名，可以使用私钥锁定信息，允许任何人使用公钥解锁信息来验证信息是否来自你。 也可用自己的私钥和对方的公钥加密，同时实现加密传输和数字签名。
-  公钥可以发送给任何人，而私钥只能由你自己保管。这些都可以通过gpg用命令行的方式实现。
-软件安装直接使用相应系统的包管理器安装gnupg即可。
-1 2 3 4 5 6 7 8  # Debian/Ubuntu sudo apt-get install gnupg # Arch Linux sudo pacman -S gnupg # MacOS brew install gnupg   建立和管理GPG密钥对生成密钥对gpg --full-generate-key   选择建立 RSA/RSA(1) 用4096 bits的密钥提高安全性 设置一个过期日期，可以设置为一年(1y)，万一遭遇_社会工程学_攻击，电脑被盗，密钥丢失，可以一定程度上降低损失。 设置一个容易记住的密码  一些常用的操作命令# 列出本机上的密钥 gpg --list-keys # 更改gpg密钥的密码, &quot;nicegeek@example.com&quot; 改成你自己密钥的邮箱 gpg --passwd nicegeek@example.com # 更改过期时间 gpg --edit-key nicegeek@example.]]></description>
+    <guid>http://nicegeeker.gitHub.io/posts/markdown-pictures-bed/</guid>
+    <description><![CDATA[<p>用markdown写文档时，用图片在本地的相对位置，可以正常显示，但是当需要上传至自己的博客时，图片就看不到了。利用七牛云的对象存储服务和mac的automator功能，打造一个可以一键上传图片文件，并自动将链接地址保存到粘贴板的功能。具体步骤如下：</p>]]></description>
 </item><item>
-    <title>First_test</title>
-    <link>http://example.org/posts/first_test/</link>
-    <pubDate>Fri, 18 Jun 2021 21:28:36 &#43;0800</pubDate>
+    <title>如何生成GPG key用于加密传输及Git使用举例</title>
+    <link>http://nicegeeker.gitHub.io/posts/tech-gpg-key-for-secret-transmission/</link>
+    <pubDate>Wed, 19 Feb 2020 09:27:56 &#43;0800</pubDate>
     <author>作者</author>
-    <guid>http://example.org/posts/first_test/</guid>
-    <description><![CDATA[ceshiyixia]]></description>
+    <guid>http://nicegeeker.gitHub.io/posts/tech-gpg-key-for-secret-transmission/</guid>
+    <description><![CDATA[<p>GPG：GNU Privacy Guard，a great password generator</p>
+<p>GPG应用程序允许您加密和解密信息。它基于使用一对密钥，一个公钥和一个私有密钥。使用一个密钥加密的数据只能用另一个密钥解密。</p>]]></description>
+</item><item>
+    <title>用Pass管理自己的密码</title>
+    <link>http://nicegeeker.gitHub.io/posts/manage-password-with-pass/</link>
+    <pubDate>Wed, 19 Feb 2020 09:27:56 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://nicegeeker.gitHub.io/posts/manage-password-with-pass/</guid>
+    <description><![CDATA[<p>pass是一个简单用命令行进行个人密码管理的软件，将你的密码用<code>gpg</code>加密后，存储在文件夹<code>~/.password-store</code>中。</p>]]></description>
 </item></channel>
 </rss>
