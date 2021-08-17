@@ -1,18 +1,23 @@
 ---
-weight: 3
+author: Nicegeek
 title: "如何生成GPG key用于加密传输及Git使用举例"
-date: 2020-02-19T09:27:56+08:00
-lastmod: 2020-03-04T16:29:41+08:00
-draft: false
 description: "GPG：GNU Privacy Guard，a great password generator. GPG允许您加密和解密信息。它基于使用一对密钥，一个公钥和一个私有密钥。使用一个密钥加密的数据只能用另一个密钥解密。"
+
+slug: gpg_key 
 resources:
 - name: "featured-image"
-  src: "featured-image.png"
+  src: "images/psssword.png"
 
+tags: ["tag"]
 tags: ["gpg key", "secret"]
-categories: ["technology"]
----
 
+isCJKLanguage: true
+draft: false
+
+weight: 3
+date: 2020-02-19T09:27:56+08:00
+lastmod: 2020-03-04T16:29:41+08:00
+---
 
 GPG：GNU Privacy Guard，a great password generator
 

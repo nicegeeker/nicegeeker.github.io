@@ -1,0 +1,57 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>所有文章 - 我的技术博客</title>
+        <link>http://nicegeeker.gitHub.io/posts/</link>
+        <description>所有文章 | 我的技术博客</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 21 Jun 2021 08:09:14 &#43;0800</lastBuildDate><atom:link href="http://nicegeeker.gitHub.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>论文写作工具链</title>
+    <link>http://nicegeeker.gitHub.io/posts/paper_writing_tools/</link>
+    <pubDate>Mon, 21 Jun 2021 08:09:14 &#43;0800</pubDate>
+    <author>Nicegeek</author>
+    <guid>http://nicegeeker.gitHub.io/posts/paper_writing_tools/</guid>
+    <description><![CDATA[<p>主要介绍文献管理Zotero和编辑器Vscode以及在写论文时常用的插件。</p>]]></description>
+</item><item>
+    <title>书籍推荐《Data-driven Science and Engineering》——Machine Learning, Dynamical Systems, and Control</title>
+    <link>http://nicegeeker.gitHub.io/posts/book_data_driven_sci_eng/</link>
+    <pubDate>Sat, 19 Jun 2021 16:02:10 &#43;0800</pubDate>
+    <author>Nicegeek</author>
+    <guid>http://nicegeeker.gitHub.io/posts/book_data_driven_sci_eng/</guid>
+    <description><![CDATA[数据驱动的工程实现，动态系统控制 作者：Steven L.Brunton, J.Nathan Kutz 剑桥大学出版 内容包括： 1.用SVD进行数据降维，维度变换，压缩感知； 2.学习算法 3.]]></description>
+</item><item>
+    <title>七牛云qshell工具和制作永久免费的markdown图床</title>
+    <link>http://nicegeeker.gitHub.io/posts/markdown_image_bed/</link>
+    <pubDate>Wed, 19 Feb 2020 09:27:56 &#43;0800</pubDate>
+    <author>Nicegeek</author>
+    <guid>http://nicegeeker.gitHub.io/posts/markdown_image_bed/</guid>
+    <description><![CDATA[<p>用markdown写文档时，用图片在本地的相对位置，可以正常显示，但是当需要上传至自己的博客时，图片就看不到了。利用七牛云的对象存储服务和mac的automator功能，或者结合Linux的Dophin文件管理器，打造一个可以一键上传图片文件，并自动将链接地址保存到粘贴板的功能。具体步骤如下：</p>]]></description>
+</item><item>
+    <title>用latex写伪代码</title>
+    <link>http://nicegeeker.gitHub.io/posts/latex_algorithm/</link>
+    <pubDate>Sat, 19 Jun 2021 15:34:56 &#43;0800</pubDate>
+    <author>Nicegeek</author>
+    <guid>http://nicegeeker.gitHub.io/posts/latex_algorithm/</guid>
+    <description><![CDATA[<p>个人推荐使用Algorithm2e在$latex$中编写伪代码。</p>]]></description>
+</item><item>
+    <title>IEEE期刊投稿公式编辑方法</title>
+    <link>http://nicegeeker.gitHub.io/posts/latex_equation/</link>
+    <pubDate>Sat, 19 Jun 2021 10:42:17 &#43;0800</pubDate>
+    <author>Nicegeek</author>
+    <guid>http://nicegeeker.gitHub.io/posts/latex_equation/</guid>
+    <description><![CDATA[<p>本文介绍了向IEEE期刊投稿时，怎么优雅地编辑公式。</p>]]></description>
+</item><item>
+    <title>如何生成GPG key用于加密传输及Git使用举例</title>
+    <link>http://nicegeeker.gitHub.io/posts/gpg_key/</link>
+    <pubDate>Wed, 19 Feb 2020 09:27:56 &#43;0800</pubDate>
+    <author>Nicegeek</author>
+    <guid>http://nicegeeker.gitHub.io/posts/gpg_key/</guid>
+    <description><![CDATA[<p>GPG：GNU Privacy Guard，a great password generator</p>
+<p>GPG应用程序允许您加密和解密信息。它基于使用一对密钥，一个公钥和一个私有密钥。使用一个密钥加密的数据只能用另一个密钥解密。</p>]]></description>
+</item><item>
+    <title>用Pass管理自己的密码</title>
+    <link>http://nicegeeker.gitHub.io/posts/password_management/</link>
+    <pubDate>Wed, 19 Feb 2020 09:27:56 &#43;0800</pubDate>
+    <author>Nicegeek</author>
+    <guid>http://nicegeeker.gitHub.io/posts/password_management/</guid>
+    <description><![CDATA[<p>pass是一个简单用命令行进行个人密码管理的软件，将你的密码用<code>gpg</code>加密后，存储在文件夹<code>~/.password-store</code>中。</p>]]></description>
+</item></channel>
+</rss>

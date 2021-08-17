@@ -1,16 +1,22 @@
 ---
-weight: 2
-title: "论文写作工作流和工具介绍"
-date: 2021-06-21T08:09:14+08:00
-lastmod: 2021-06-21T08:09:14+08:00
-draft: false
-description: "介绍我在论文写作中常用的工具。"
+author: Nicegeek
+title: "论文写作工具链"
+description: "介绍我在写论文时常用的工具。"
+
+slug: paper_writing_tools
 resources:
 - name: "featured-image"
-  src: "featured-image.png"
+  src: "images/zotero_vscode.png"
 
-tags: ["写作","工具"]
+tags: ["写作", "工具"]
 categories: ["research"]
+
+isCJKLanguage: true
+draft: false
+
+weight: 2
+date: 2021-06-21T08:09:14+08:00
+lastmod: 2021-06-21T08:09:14+08:00
 ---
 
 主要介绍文献管理Zotero和编辑器Vscode以及在写论文时常用的插件。

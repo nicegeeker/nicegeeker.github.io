@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noodp"/><title>IEEE期刊投稿公式编辑方法 | 我的技术博客</title><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://nicegeeker.gitHub.io/posts/latex_equation/images/latex.png"/>
+<meta name="twitter:title" content="IEEE期刊投稿公式编辑方法"/>
+<meta name="twitter:description" content="向IEEE投稿时，怎么优雅地编辑公式。"/><meta name="Description" content="向IEEE投稿时，怎么优雅地编辑公式。"><meta property="og:title" content="IEEE期刊投稿公式编辑方法" />
+<meta property="og:description" content="向IEEE投稿时，怎么优雅地编辑公式。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://nicegeeker.gitHub.io/posts/latex_equation/" /><meta property="og:image" content="http://nicegeeker.gitHub.io/posts/latex_equation/images/latex.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-06-19T10:42:17+08:00" />
+<meta property="article:modified_time" content="2021-06-19T10:42:17+08:00" /><meta property="og:site_name" content="我的技术博客" />
+
+<meta name="application-name" content="uBlogger">
+<meta name="apple-mobile-web-app-title" content="uBlogger"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+        <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://nicegeeker.gitHub.io/posts/latex_equation/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/lib/prismjs/prism.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "IEEE期刊投稿公式编辑方法",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/nicegeeker.gitHub.io\/posts\/latex_equation\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "http:\/\/nicegeeker.gitHub.io\/posts\/latex_equation\/images\/latex.png",
+                            "width":  803 ,
+                            "height":  394 
+                        }],"genre": "posts","keywords": "latex, 公式","wordCount":  3332 ,
+        "url": "http:\/\/nicegeeker.gitHub.io\/posts\/latex_equation\/","datePublished": "2021-06-19T10:42:17+08:00","dateModified": "2021-06-19T10:42:17+08:00","description": "向IEEE投稿时，怎么优雅地编辑公式。"
+    }
+    </script><script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "主页",
+            "item": "http:\/\/nicegeeker.gitHub.io\/"
+        },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "research",
+            "item": "http://nicegeeker.gitHub.io/categories/research/"
+        },{
+                "@type": "ListItem",
+                "position": 3,
+                "name": "IEEE期刊投稿公式编辑方法"
+            }]
+    }
+</script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header>
+    <div class="desktop header" id="header-desktop">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="我的技术博客" class="header-logo logo-svg"><span class="header-title-pre"><i class='fas fa-pencil-alt fa-fw'></i></span>NiceGeek</a>
+            </div>
+            <div class="menu">
+                <nav>
+                    <h2 class="display-hidden">Основная навигация</h2>
+                    <ul class="menu-inner"><li>
+                            <a class="menu-item" href="/posts/"> 博客文章 </a>
+                        </li><li>
+                            <a class="menu-item" href="/tags/"> 标签 </a>
+                        </li><li>
+                            <a class="menu-item" href="/categories/"> 分类 </a>
+                        </li><li>
+                            <a class="menu-item" href="/about/"> 关于 </a>
+                        </li></ul>
+                </nav><span class="menu-item delimiter"></span><span onclick="javascript:void(0);" class="menu-item language" title="选择语言">简体中文<select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/posts/latex_equation/" selected>简体中文</option></select>
+                </span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <span class="svg-icon icon-search"></span>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <span class="svg-icon icon-cancel"></span>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <span class="svg-icon icon-loading"></span>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <span class="svg-icon icon-moon"></span>
+                </a>
+            </div>
+        </div>
+    </div><div class="mobile header" id="header-mobile">
+        <div class="header-container">
+            <div class="header-wrapper">
+                <div class="header-title">
+                    <a href="/" title="我的技术博客" class="header-logo"><span class="header-title-pre"><i class='fas fa-pencil-alt fa-fw'></i></span>NiceGeek</a>
+                </div>
+                <div class="menu-toggle" id="menu-toggle-mobile">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+            <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                        <div class="search mobile" id="search-mobile">
+                            <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                                <span class="svg-icon icon-search"></span>
+                            </a>
+                            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                                <span class="svg-icon icon-cancel"></span>
+                            </a>
+                            <span class="search-button search-loading" id="search-loading-mobile">
+                                <span class="svg-icon icon-loading"></span>
+                            </span>
+                        </div>
+                        <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                            取消
+                        </a>
+                    </div><nav>
+                    <h2 class="display-hidden">Основная навигация</h2>
+                    <ul><li>
+                            <a class="menu-item" href="/posts/" title="">博客文章</a>
+                        </li><li>
+                            <a class="menu-item" href="/tags/" title="">标签</a>
+                        </li><li>
+                            <a class="menu-item" href="/categories/" title="">分类</a>
+                        </li><li>
+                            <a class="menu-item" href="/about/" title="">关于</a>
+                        </li></ul>
+                </nav>
+                <a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <span class="svg-icon icon-moon"></span>
+                </a><span onclick="javascript:void(0);" class="menu-item" title="选择语言">简体中文<select class="language-select" onchange="location = this.value;"><option value="/posts/latex_equation/" selected>简体中文</option></select>
+                    </span></div>
+        </div>
+    </div><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div></header><main class="main">
+<div class="container content-article page-toc theme-classic"><div class="toc" id="toc-auto">
+            <div class="toc-title">目录</div>
+            <div class="toc-content always-active" id="toc-content-auto"></div>
+        </div>
+
+    
+    
+    <article>
+    
+
+        <header class="header-post">
+
+            
+
+            
+            <div class="post-title">
+
+                    <div class="post-all-meta">
+                        <nav class="breadcrumbs">
+    <ol>
+        <li><a href="/">主页 </a></li><li><a href="/categories/research/">research </a></li><li>IEEE期刊投稿公式编辑方法</li>
+    </ol>
+</nav>
+                        <h1 class="single-title flipInX">IEEE期刊投稿公式编辑方法</h1><div class="post-meta summary-post-meta"><span class="post-category meta-item">
+                                <a href="/categories/research/"><span class="svg-icon icon-folder"></span>research</a>
+                            </span><span class="post-meta-date meta-item">
+                                <span class="svg-icon icon-clock"></span><time class="timeago" datetime="2021-06-19">2021-06-19</time>
+                            </span><span class="post-meta-words meta-item">
+                                <span class="svg-icon icon-pencil"></span>约 3332 字
+                            </span>
+                            <span class="post-meta-reading meta-item">
+                                <span class="svg-icon icon-stopwatch"></span>预计阅读 7 分钟
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                </header>
+
+        <div class="article-post toc-start">
+
+            <div class="content-block content-block-first content-block-position">
+
+                <div class="post single"><div class="image-theme-classic">
+                        <img src="http://nicegeeker.gitHub.io/posts/latex_equation/images/latex.png" style="width: 100%">
+                    </div><div class="details toc" id="toc-static"  data-kept="">
+                        <div class="details-summary toc-title">
+                            <span>目录</span>
+                        </div>
+                        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#公式编辑环境推荐">公式编辑环境推荐</a></li>
+    <li><a href="#基础用法">基础用法</a>
+      <ul>
+        <li><a href="#单行公式写法">单行公式写法</a></li>
+        <li><a href="#多行公式写法">多行公式写法</a></li>
+        <li><a href="#矩阵写法">矩阵写法</a></li>
+        <li><a href="#控制编号">控制编号</a></li>
+      </ul>
+    </li>
+    <li><a href="#特殊情况及技巧">特殊情况及技巧</a>
+      <ul>
+        <li><a href="#1-公式某行过长与编号重叠且公式前还有空间时">1. 公式某行过长与编号重叠，且公式前还有空间时</a></li>
+        <li><a href="#2-公式的第一行过长时">2. 公式的第一行过长时</a></li>
+        <li><a href="#3控制公式中括号的大小">3.控制公式中括号的大小</a></li>
+        <li><a href="#4防止同一公式的多行分页显示">4.防止同一公式的多行分页显示</a></li>
+        <li><a href="#5-控制公式是否能换页">5. 控制公式是否能换页</a></li>
+        <li><a href="#6给公式引用添加超链结">6.给公式引用添加超链结</a></li>
+      </ul>
+    </li>
+    <li><a href="#几个细节">几个细节</a>
+      <ul>
+        <li><a href="#注意区分一元操作符和二元操作符">注意区分一元操作符和二元操作符</a></li>
+        <li><a href="#公式的lable最好放置在指定公式的最后">公式的<code>\lable{}</code>最好放置在指定公式的最后</a></li>
+        <li><a href="#应注意公式里面文字部分的字体">应注意公式里面文字部分的字体</a></li>
+        <li><a href="#正确实现微分符号d">正确实现微分符号<code>d</code></a></li>
+        <li><a href="#argminargmax及trace实现方法"><code>argmin</code>、<code>argmax</code>及<code>trace</code>实现方法</a></li>
+        <li><a href="#解决不可见的公式引用问题">解决不可见的公式引用问题</a></li>
+        <li><a href="#解决ieeeeqnarray中编号字体随环境定义变化的问题">解决<code>IEEEeqnarray</code>中编号字体随环境定义变化的问题</a></li>
+      </ul>
+    </li>
+    <li><a href="#使用进阶">使用进阶</a>
+      <ul>
+        <li><a href="#1两组相邻公式之间有简短文字相隔如何将两组公式进行对齐">1.两组相邻公式之间有简短文字相隔，如何将两组公式进行对齐</a></li>
+        <li><a href="#2-用ieeeeqnarraybox结合ieeeeqnarraystrutmode实现复杂的公式结构">2. 用<code>IEEEeqnarraybox</code>结合<code>IEEEeqnarraystrutmode</code>实现复杂的公式结构</a></li>
+        <li><a href="#3-实现函数组中每个函数逐个编号">3. 实现函数组中每个函数逐个编号</a></li>
+      </ul>
+    </li>
+    <li><a href="#文件头代码汇总">文件头代码汇总</a></li>
+  </ul>
+</nav></div>
+                    </div><p>本文介绍了向IEEE期刊投稿时，怎么优雅地编辑公式。</p>
+<h2 id="公式编辑环境推荐" class="headerLink"><a href="#%e5%85%ac%e5%bc%8f%e7%bc%96%e8%be%91%e7%8e%af%e5%a2%83%e6%8e%a8%e8%8d%90" class="header-mark"></a>公式编辑环境推荐</h2><ol>
+<li>
+<p>在编辑公式前，必须载入公式的基础包<code>\userpackage{amsmath}</code></p>
+</li>
+<li>
+<p>为了保持全文风格的一致性，建议只使用<code>IEEEeqnarray</code>环境，原因：</p>
+<ul>
+<li>不同的公式环境，前后留白的大小不一样</li>
+<li><code>equation</code>环境可以实现自动换行，但是有些时候，公式后面还有公式标号的空间时，也会自动换行后再生成公式标号，而<code>IEEEequarray</code>可以完全自由地控制换行的位置</li>
+<li><code>align</code>环境在某行公式过长时，会产生对齐问题，如下图所示。
+
+
+
+
+    
+<img loading="lazy" decoding="async"
+         class="render-image"
+         src="https://pic.rgsc.top/2020-12-10-f4f8aa47-align_prob.png"
+         alt="&lt;code&gt;align&lt;/code&gt;环境对齐问题"
+         title="2020-12-10-f4f8aa47-align_prob.png"
+    /></li>
+<li><code>equarray</code>环境可以解决公式对齐的问题，但是对齐后会导致<code>=</code>前后的空格变大，与其他任何一种环境都不一样，所以应<strong>严格不使用该环境</strong>
+
+
+
+
+    
+<img loading="lazy" decoding="async"
+         class="render-image"
+         src="https://pic.rgsc.top/2020-12-10-d53659a0-equarray.png"
+         alt="https://pic.rgsc.top/2020-12-10-d53659a0-equarray.png"
+         title="2020-12-10-d53659a0-equarray.png"
+    /></li>
+<li><code>IEEEeqnarray</code>环境的灵活性和一致性，可以实现所有公式编辑中需要的功能</li>
+</ul>
+</li>
+<li>
+<p>在使用<code>IEEEeqnarray</code>环境时，如果文档使用的是<code>\documentclass[]{IEEEtran}</code>，则直接使用即可，如果不是则要载入包<code>\usepackage{IEEEtrantools}</code>(回复审稿意见时可能会用到)。</p>
+</li>
+</ol>
+<h2 id="基础用法" class="headerLink"><a href="#%e5%9f%ba%e7%a1%80%e7%94%a8%e6%b3%95" class="header-mark"></a>基础用法</h2><h3 id="单行公式写法" class="headerLink"><a href="#%e5%8d%95%e8%a1%8c%e5%85%ac%e5%bc%8f%e5%86%99%e6%b3%95" class="header-mark"></a>单行公式写法</h3><p>单行公式，直接一列，用<code>{c}</code>居中即可</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\begin</span><span class="nb">{</span>IEEEeqnarray<span class="nb">}{</span>c<span class="nb">}</span>
+  a = b + c
+<span class="k">\end</span><span class="nb">{</span>IEEEeqnarray<span class="nb">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="多行公式写法" class="headerLink"><a href="#%e5%a4%9a%e8%a1%8c%e5%85%ac%e5%bc%8f%e5%86%99%e6%b3%95" class="header-mark"></a>多行公式写法</h3><p>公式换行准则：</p>
+<ul>
+<li>通常在等号或者运算符前进行换行</li>
+<li>等号前优先于运算符前换行</li>
+<li>加号或者减号前优先于其他运算符前换行</li>
+<li>尽量避免其他换行方式</li>
+</ul>
+<p>多行公式，分成三列，按照<code>=</code>进行对齐，左列靠右，中列剧中，右列靠左</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\begin</span><span class="nb">{</span>IEEEeqnarray<span class="nb">}{</span>rCl<span class="nb">}</span>
+  a <span class="nb">&amp;</span> = <span class="nb">&amp;</span> b + c    <span class="k">\\</span>
+    <span class="nb">&amp;</span> = <span class="nb">&amp;</span> e + f+ g <span class="k">\\</span>
+    <span class="nb">&amp;</span> = <span class="nb">&amp;</span> h + j
+<span class="k">\end</span><span class="nb">{</span>IEEEeqnarray<span class="nb">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>当公式后有括号说明时，可以添加空格列和文字对齐列，如：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\begin</span><span class="nb">{</span>IEEEeqnarray<span class="nb">}{</span>rCl&#34;s<span class="nb">}</span>
+ ...
+<span class="k">\end</span><span class="nb">{</span>IEEEeqnarray<span class="nb">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>列位置控制符:</p>
+<table>
+<thead>
+<tr>
+<th>符号</th>
+<th>表示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>l c r L C R</td>
+<td>分别表示数字的靠左，居中，靠右</td>
+</tr>
+<tr>
+<td>s  t  u</td>
+<td>分别表示文字模式的靠左，居中，靠右</td>
+</tr>
+<tr>
+<td>. / ?  &quot;</td>
+<td>空格大小，逐渐变大</td>
+</tr>
+</tbody>
+</table>
+<h3 id="矩阵写法" class="headerLink"><a href="#%e7%9f%a9%e9%98%b5%e5%86%99%e6%b3%95" class="header-mark"></a>矩阵写法</h3><p>用<code>matrix</code>环境实现：</p>
+<ul>
+<li><code>matrix</code>:无括号的矩阵,</li>
+<li><code>pmatrix</code>:(),</li>
+<li><code>bmatrix</code>:[],</li>
+<li><code>Bmatrix</code>:{},</li>
+<li><code>vmatrix</code>: | |,</li>
+<li><code>Vmatrix</code>: ||  ||</li>
+</ul>
+<h3 id="控制编号" class="headerLink"><a href="#%e6%8e%a7%e5%88%b6%e7%bc%96%e5%8f%b7" class="header-mark"></a>控制编号</h3><p>公式的某行是否编号以及是否有子编号，通过在行内加入 <code>\IEEEyesnumber</code>、<code>\IEEEnonumber</code>、<code>\IEEEyessubnumber</code>和<code>\IEEEnosubnumber</code>来实现，上述命令后面加<code>*</code>，表示从此行起，遇到新的编号命令前，按照此行的命令执行。如<code>\IEEEyesnumber*</code>表示从此行起，后面的每行公式都编号。</p>
+<p>编号命令放在每行的最后面，换行符<code>\\</code>前。</p>
+<h2 id="特殊情况及技巧" class="headerLink"><a href="#%e7%89%b9%e6%ae%8a%e6%83%85%e5%86%b5%e5%8f%8a%e6%8a%80%e5%b7%a7" class="header-mark"></a>特殊情况及技巧</h2><h3 id="1-公式某行过长与编号重叠且公式前还有空间时" class="headerLink"><a href="#1-%e5%85%ac%e5%bc%8f%e6%9f%90%e8%a1%8c%e8%bf%87%e9%95%bf%e4%b8%8e%e7%bc%96%e5%8f%b7%e9%87%8d%e5%8f%a0%e4%b8%94%e5%85%ac%e5%bc%8f%e5%89%8d%e8%bf%98%e6%9c%89%e7%a9%ba%e9%97%b4%e6%97%b6" class="header-mark"></a>1. 公式某行过长与编号重叠，且公式前还有空间时</h3><p>这种情况，不需要手动调整将比较长的那一行进行换行，只需在与编号重叠的那一行最后添加<code>\IEEEeqnarraynumspace</code>,公式整体会左移，空出公式编号的位置。</p>
+<p><em>使用此方法时，要注意不要让公式的左侧超出文字的边界。</em></p>
+<h3 id="2-公式的第一行过长时" class="headerLink"><a href="#2-%e5%85%ac%e5%bc%8f%e7%9a%84%e7%ac%ac%e4%b8%80%e8%a1%8c%e8%bf%87%e9%95%bf%e6%97%b6" class="header-mark"></a>2. 公式的第一行过长时</h3><p>可以用<code>\IEEEeqnarraymulticol{3}{l}{}</code>将第一行的三列合并为一行，如下式：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\begin</span><span class="nb">{</span>IEEEeqnarray<span class="nb">}{</span>rCl<span class="nb">}</span>
+  <span class="k">\IEEEeqnarraymulticol</span><span class="nb">{</span>3<span class="nb">}{</span>l<span class="nb">}{</span> a + b + c + d + e + f + g + h<span class="nb">}</span><span class="k">\IEEEnonumber\\*</span> 
+  <span class="k">\quad</span> <span class="nb">&amp;</span> = <span class="nb">&amp;</span> i + j <span class="k">\\</span> 
+       <span class="nb">&amp;</span> = <span class="nb">&amp;</span> k + l + m 
+<span class="k">\end</span><span class="nb">{</span>IEEEeqnarray<span class="nb">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>显示效果如下：
+
+
+
+
+    
+<img loading="lazy" decoding="async"
+         class="render-image"
+         src="https://pic.rgsc.top/2020-12-10-b49fe48b-multi_col.png"
+         alt="https://pic.rgsc.top/2020-12-10-b49fe48b-multi_col.png"
+         title="2020-12-10-b49fe48b-multi_col.png"
+    />
+通过，添加<code>\qquad</code>可以调整下几行公式缩进的程度，<em>需特别注意：<code>\IEEEeqnarraymuticol</code>前面不可以添加<code>\lable{}</code></em>。</p>
+<h3 id="3控制公式中括号的大小" class="headerLink"><a href="#3%e6%8e%a7%e5%88%b6%e5%85%ac%e5%bc%8f%e4%b8%ad%e6%8b%ac%e5%8f%b7%e7%9a%84%e5%a4%a7%e5%b0%8f" class="header-mark"></a>3.控制公式中括号的大小</h3><p>latex可以自动根据括号中公式的大小，调整对应的括号的大小，只需要在括号前加入<code>\left</code>、<code>\right</code>或者<code>\middle</code>,如以下代码所示：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\begin</span><span class="nb">{</span>IEEEeqnarray<span class="nb">}{</span>c<span class="nb">}</span>
+    H<span class="k">\left</span>(X <span class="k">\,</span> <span class="k">\middle</span>| <span class="k">\,</span> <span class="k">\frac</span><span class="nb">{</span>Y<span class="nb">}{</span>X<span class="nb">}</span> <span class="k">\right</span>) 
+<span class="k">\end</span><span class="nb">{</span>IEEEeqnarray<span class="nb">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>显示效果如下：
+
+
+
+
+    
+<img loading="lazy" decoding="async"
+         class="render-image"
+         src="https://pic.rgsc.top/2020-12-11-7ca0acc6-presences.png"
+         alt="https://pic.rgsc.top/2020-12-11-7ca0acc6-presences.png"
+         title="2020-12-11-7ca0acc6-presences.png"
+    /></p>
+<p>但是还需要解决以下两个问题：</p>
+<ul>
+<li>用括号表示函数$f()$时，$f$与$()$的距离太远，如下图所示：
+
+
+
+
+    
+<img loading="lazy" decoding="async"
+         class="render-image"
+         src="https://pic.rgsc.top/2020-12-11-2725110a-too_far.png"
+         alt="https://pic.rgsc.top/2020-12-11-2725110a-too_far.png"
+         title="2020-12-11-2725110a-too_far.png"
+    />
+可以在文件头加入以下代码解决此问题：</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\usepackage</span><span class="nb">{</span>mleftright<span class="nb">}</span>
+<span class="k">\mleftright</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>当左、右括号之间出现换行时，如下图所示
+
+
+
+
+    
+<img loading="lazy" decoding="async"
+         class="render-image"
+         src="https://pic.rgsc.top/2020-12-11-bd6afbb7-swicth_line.png"
+         alt="https://pic.rgsc.top/2020-12-11-bd6afbb7-swicth_line.png"
+         title="2020-12-11-bd6afbb7-swicth_line.png"
+    />
+可以在头文件加入以下代码解决此问题：</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\newcommand</span><span class="nb">{</span><span class="k">\sizecorr</span><span class="nb">}</span>[1]<span class="nb">{</span><span class="k">\makebox</span><span class="na">[0cm]</span><span class="nb">{</span><span class="k">\phantom</span><span class="nb">{</span><span class="s">$</span><span class="nv">\displaystyle</span><span class="nb"> #</span><span class="m">1</span><span class="s">$</span><span class="nb">}}}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="4防止同一公式的多行分页显示" class="headerLink"><a href="#4%e9%98%b2%e6%ad%a2%e5%90%8c%e4%b8%80%e5%85%ac%e5%bc%8f%e7%9a%84%e5%a4%9a%e8%a1%8c%e5%88%86%e9%a1%b5%e6%98%be%e7%a4%ba" class="header-mark"></a>4.防止同一公式的多行分页显示</h3><p>只需在公式换行符号<code>\\</code>后添加<code>*</code></p>
+<h3 id="5-控制公式是否能换页" class="headerLink"><a href="#5-%e6%8e%a7%e5%88%b6%e5%85%ac%e5%bc%8f%e6%98%af%e5%90%a6%e8%83%bd%e6%8d%a2%e9%a1%b5" class="header-mark"></a>5. 控制公式是否能换页</h3><p>在文件头添加<code>\interdisplaylinepenalty=xx</code>。</p>
+<ul>
+<li>若xx=0，则允许公式换页</li>
+<li>若xx=2500, 则由latex自行判断，在没有更好的处理办法时，再进行换页</li>
+<li>若xx=10000, 则严格禁止公式换页</li>
+</ul>
+<h3 id="6给公式引用添加超链结" class="headerLink"><a href="#6%e7%bb%99%e5%85%ac%e5%bc%8f%e5%bc%95%e7%94%a8%e6%b7%bb%e5%8a%a0%e8%b6%85%e9%93%be%e7%bb%93" class="header-mark"></a>6.给公式引用添加超链结</h3><p>只需在文件头添加<code>\usepackage[colorlinks=true,linkcolor=blue]{hyperref}</code></p>
+<h2 id="几个细节" class="headerLink"><a href="#%e5%87%a0%e4%b8%aa%e7%bb%86%e8%8a%82" class="header-mark"></a>几个细节</h2><h3 id="注意区分一元操作符和二元操作符" class="headerLink"><a href="#%e6%b3%a8%e6%84%8f%e5%8c%ba%e5%88%86%e4%b8%80%e5%85%83%e6%93%8d%e4%bd%9c%e7%ac%a6%e5%92%8c%e4%ba%8c%e5%85%83%e6%93%8d%e4%bd%9c%e7%ac%a6" class="header-mark"></a>注意区分一元操作符和二元操作符</h3><ul>
+<li>如<code>-</code>作为一元操作符是负号，作为二元操作符是减号，当他在公式某行的最前面时，会自动被当作一元操作符，会导致其与后一个符号的距离太近，应在符号后面添加<code>\&gt;</code>，使其保持与后侧符号距离，作为二元操作符显示。</li>
+<li>某些情况下，latex会将一元操作符，显示为二元操作符，如在<code>\log</code>和<code>\sin</code>前时，为了使其作为一元操作符显示应将后面的表达式用<code>{}</code>括起来，如<code>-{\log a}</code>。</li>
+</ul>
+<h3 id="公式的lable最好放置在指定公式的最后" class="headerLink"><a href="#%e5%85%ac%e5%bc%8f%e7%9a%84lable%e6%9c%80%e5%a5%bd%e6%94%be%e7%bd%ae%e5%9c%a8%e6%8c%87%e5%ae%9a%e5%85%ac%e5%bc%8f%e7%9a%84%e6%9c%80%e5%90%8e" class="header-mark"></a>公式的<code>\lable{}</code>最好放置在指定公式的最后</h3><p>公式的<code>\lable{}</code>最好放在本行公式的最后，换行符<code>\\</code>前，以避免类似<code>\IEEEeqnarraymulticol</code>的情况</p>
+<h3 id="应注意公式里面文字部分的字体" class="headerLink"><a href="#%e5%ba%94%e6%b3%a8%e6%84%8f%e5%85%ac%e5%bc%8f%e9%87%8c%e9%9d%a2%e6%96%87%e5%ad%97%e9%83%a8%e5%88%86%e7%9a%84%e5%ad%97%e4%bd%93" class="header-mark"></a>应注意公式里面文字部分的字体</h3><p>文字部分的字体应与公式符号的字体不一样，应该将文字部分用<code>\text{}</code>括起来，或者在指定环境中各列对齐方式时，使用<code>s, t, u</code>指定该部分为文字，在文字位置需要添加公式则用行内公式的写法<code>$...$</code>实现。</p>
+<h3 id="正确实现微分符号d" class="headerLink"><a href="#%e6%ad%a3%e7%a1%ae%e5%ae%9e%e7%8e%b0%e5%be%ae%e5%88%86%e7%ac%a6%e5%8f%b7d" class="header-mark"></a>正确实现微分符号<code>d</code></h3><p>在文件头添加<code>\newcommand{\dd}{\mathop{}\!\mathrm{d}}</code>，用<code>\dd</code>表示微分符号<code>d</code>。</p>
+<h3 id="argminargmax及trace实现方法" class="headerLink"><a href="#argminargmax%e5%8f%8atrace%e5%ae%9e%e7%8e%b0%e6%96%b9%e6%b3%95" class="header-mark"></a><code>argmin</code>、<code>argmax</code>及<code>trace</code>实现方法</h3><p>在文件头加入以下代码：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="c">% argmin argmax  trace
+</span><span class="c"></span><span class="k">\DeclareMathOperator*</span><span class="nb">{</span><span class="k">\argminA</span><span class="nb">}{</span>arg<span class="k">\,</span>min<span class="nb">}</span>
+<span class="k">\DeclareMathOperator*</span><span class="nb">{</span><span class="k">\argminB</span><span class="nb">}{</span>argmin<span class="nb">}</span>
+<span class="k">\DeclareMathOperator*</span><span class="nb">{</span><span class="k">\argmaxA</span><span class="nb">}{</span>arg<span class="k">\,</span>max<span class="nb">}</span>
+<span class="k">\DeclareMathOperator*</span><span class="nb">{</span><span class="k">\argmaxB</span><span class="nb">}{</span>argmax<span class="nb">}</span>
+
+<span class="k">\DeclareMathOperator</span><span class="nb">{</span><span class="k">\tr</span><span class="nb">}{</span>Tr<span class="nb">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>A和B两种样式都可以使用，选择自己习惯的样式。</p>
+<h3 id="解决不可见的公式引用问题" class="headerLink"><a href="#%e8%a7%a3%e5%86%b3%e4%b8%8d%e5%8f%af%e8%a7%81%e7%9a%84%e5%85%ac%e5%bc%8f%e5%bc%95%e7%94%a8%e9%97%ae%e9%a2%98" class="header-mark"></a>解决不可见的公式引用问题</h3><p>不可见引用是指，在公式中使用了子编号如<code>(3a), (3b)</code>, 并没有显式的出现编号<code>(3)</code>， 而文中却引用了公式(3)。此时公式(3)的引用超链结会出现问题。需要在文件头中加入以下代码：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\makeatletter</span>
+<span class="k">\def\IEEElabelanchoreqn</span>#1<span class="nb">{</span><span class="k">\bgroup</span>
+<span class="k">\def\@</span>currentlabel<span class="nb">{</span><span class="k">\p</span>@equation<span class="k">\theequation</span><span class="nb">}</span><span class="k">\relax</span>
+<span class="k">\def\@</span>currentHref<span class="nb">{</span><span class="k">\@</span>IEEEtheHrefequation<span class="nb">}</span><span class="k">\label</span><span class="nb">{</span>#1<span class="nb">}</span><span class="k">\relax</span>
+<span class="k">\Hy</span>@raisedlink<span class="nb">{</span><span class="k">\hyper</span>@anchorstart<span class="nb">{</span><span class="k">\@</span>currentHref<span class="nb">}}</span><span class="k">\relax</span>
+<span class="k">\Hy</span>@raisedlink<span class="nb">{</span><span class="k">\hyper</span>@anchorend<span class="nb">}</span><span class="k">\egroup</span><span class="nb">}</span>
+<span class="k">\makeatother</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\subnumberinglabel</span><span class="nb">}</span>[1]<span class="nb">{</span><span class="k">\IEEEyesnumber</span>
+  <span class="k">\IEEEyessubnumber*\IEEElabelanchoreqn</span><span class="nb">{</span>#1<span class="nb">}}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="解决ieeeeqnarray中编号字体随环境定义变化的问题" class="headerLink"><a href="#%e8%a7%a3%e5%86%b3ieeeeqnarray%e4%b8%ad%e7%bc%96%e5%8f%b7%e5%ad%97%e4%bd%93%e9%9a%8f%e7%8e%af%e5%a2%83%e5%ae%9a%e4%b9%89%e5%8f%98%e5%8c%96%e7%9a%84%e9%97%ae%e9%a2%98" class="header-mark"></a>解决<code>IEEEeqnarray</code>中编号字体随环境定义变化的问题</h3><p>在<code>IEEEeqnarray</code>环境中，如果定义了环境的字体，则公式的编号字体也会随之变化，为了避免这个问题，可以在文件头中加入下列代码：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\renewcommand</span><span class="nb">{</span><span class="k">\theequationdis</span><span class="nb">}{{</span><span class="k">\normalfont</span> (<span class="k">\theequation</span>)<span class="nb">}}</span> 
+<span class="k">\renewcommand</span><span class="nb">{</span><span class="k">\theIEEEsubequationdis</span><span class="nb">}{{</span><span class="k">\normalfont</span> (<span class="k">\theIEEEsubequation</span>)<span class="nb">}}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="使用进阶" class="headerLink"><a href="#%e4%bd%bf%e7%94%a8%e8%bf%9b%e9%98%b6" class="header-mark"></a>使用进阶</h2><h3 id="1两组相邻公式之间有简短文字相隔如何将两组公式进行对齐" class="headerLink"><a href="#1%e4%b8%a4%e7%bb%84%e7%9b%b8%e9%82%bb%e5%85%ac%e5%bc%8f%e4%b9%8b%e9%97%b4%e6%9c%89%e7%ae%80%e7%9f%ad%e6%96%87%e5%ad%97%e7%9b%b8%e9%9a%94%e5%a6%82%e4%bd%95%e5%b0%86%e4%b8%a4%e7%bb%84%e5%85%ac%e5%bc%8f%e8%bf%9b%e8%a1%8c%e5%af%b9%e9%bd%90" class="header-mark"></a>1.两组相邻公式之间有简短文字相隔，如何将两组公式进行对齐</h3><p>具体实现方法如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex">We have 
+<span class="k">\begin</span><span class="nb">{</span>IEEEeqnarray<span class="nb">}{</span>rCl<span class="nb">}</span>
+  <span class="k">\subnumberinglabel</span><span class="nb">{</span>eq:block3<span class="nb">}</span> a <span class="nb">&amp;</span> = <span class="nb">&amp;</span> b + c <span class="k">\label</span><span class="nb">{</span>eq:block3<span class="nb">_</span>eq1<span class="nb">}</span><span class="k">\\</span> 
+  <span class="nb">&amp;</span> = <span class="nb">&amp;</span> d + e <span class="k">\label</span><span class="nb">{</span>eq:block3<span class="nb">_</span>eq2<span class="nb">}</span><span class="k">\\</span> 
+  <span class="k">\noalign</span><span class="nb">{</span><span class="k">\noindent</span> and <span class="k">\vspace</span><span class="nb">{</span>2<span class="k">\jot</span><span class="nb">}}</span> 
+ f <span class="nb">&amp;</span> = <span class="nb">&amp;</span> g - h + i <span class="k">\label</span><span class="nb">{</span>eq:block3<span class="nb">_</span>eq3<span class="nb">}</span> 
+<span class="k">\end</span><span class="nb">{</span>IEEEeqnarray<span class="nb">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>显示效果如下：
+
+
+
+
+    
+<img loading="lazy" decoding="async"
+         class="render-image"
+         src="https://pic.rgsc.top/2020-12-10-cb2793f2-align.png"
+         alt="https://pic.rgsc.top/2020-12-10-cb2793f2-align.png"
+         title="2020-12-10-cb2793f2-align.png"
+    /></p>
+<p>注意中间的and部分实现代码是<code>\noalign{\noindent and \vspace{2\jot}}</code>。</p>
+<h3 id="2-用ieeeeqnarraybox结合ieeeeqnarraystrutmode实现复杂的公式结构" class="headerLink"><a href="#2-%e7%94%a8ieeeeqnarraybox%e7%bb%93%e5%90%88ieeeeqnarraystrutmode%e5%ae%9e%e7%8e%b0%e5%a4%8d%e6%9d%82%e7%9a%84%e5%85%ac%e5%bc%8f%e7%bb%93%e6%9e%84" class="header-mark"></a>2. 用<code>IEEEeqnarraybox</code>结合<code>IEEEeqnarraystrutmode</code>实现复杂的公式结构</h3><p><code>IEEEeqnarraybox</code>用法与<code>IEEEeqnarray</code>类似，其特点是可以嵌套在其他环境中。 在<code>IEEEeqnarraybox</code>的属性中添加<code>IEEEequarraystrutmode</code>，具体用法见下列示例。
+举例1:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\begin</span><span class="nb">{</span>IEEEeqnarray<span class="nb">}{</span>c<span class="nb">}</span>
+ <span class="k">\IEEEnonumber*</span>
+    <span class="k">\begin</span><span class="nb">{</span>IEEEeqnarraybox<span class="nb">}</span>[ <span class="k">\IEEEeqnarraystrutmode</span> <span class="k">\IEEEeqnarraystrutsizeadd</span><span class="nb">{</span>3pt<span class="nb">}</span> <span class="nb">{</span>1pt<span class="nb">}</span> ]<span class="nb">{</span>c’c/v/c’c’c<span class="nb">}</span>
+        D<span class="nb">_</span>1 <span class="nb">&amp;</span> D<span class="nb">_</span>2 <span class="nb">&amp;</span> <span class="nb">&amp;</span> X<span class="nb">_</span>1 <span class="nb">&amp;</span> X<span class="nb">_</span>2 <span class="nb">&amp;</span> X<span class="nb">_</span>3 <span class="k">\\</span>
+        <span class="k">\hline</span> 
+        0 <span class="nb">&amp;</span> 0 <span class="nb">&amp;&amp;</span> +1 <span class="nb">&amp;</span> +1 <span class="nb">&amp;</span> +1<span class="k">\\</span> 
+        0 <span class="nb">&amp;</span> 1 <span class="nb">&amp;&amp;</span> +1 <span class="nb">&amp;</span> -1 <span class="nb">&amp;</span> -1<span class="k">\\</span> 
+        1 <span class="nb">&amp;</span> 0 <span class="nb">&amp;&amp;</span> -1 <span class="nb">&amp;</span> +1 <span class="nb">&amp;</span> -1<span class="k">\\</span> 1 <span class="nb">&amp;</span> 1 <span class="nb">&amp;&amp;</span> -1 <span class="nb">&amp;</span> -1 <span class="nb">&amp;</span> +1 
+    <span class="k">\end</span><span class="nb">{</span>IEEEeqnarraybox<span class="nb">}</span> 
+<span class="k">\end</span><span class="nb">{</span>IEEEeqnarray<span class="nb">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>其中<code>{3pt}</code>和<code>{1pt}</code>表示行前，行后添加的空白大小。</p>
+<p>举例2:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\begin</span><span class="nb">{</span>IEEEeqnarray<span class="nb">}{</span>c<span class="nb">}</span> 
+    <span class="k">\left</span>.
+    <span class="k">\begin</span><span class="nb">{</span>IEEEeqnarraybox<span class="nb">}</span>[<span class="k">\IEEEeqnarraystrutmode</span> <span class="k">\IEEEeqnarraystrutsizeadd</span><span class="nb">{</span>2pt<span class="nb">}{</span>2pt<span class="nb">}</span>][c]<span class="nb">{</span>rCl<span class="nb">}</span> 
+    x <span class="nb">&amp;</span> = <span class="nb">&amp;</span> a + b<span class="k">\\</span> 
+    y <span class="nb">&amp;</span> = <span class="nb">&amp;</span> a - b 
+    <span class="k">\end</span><span class="nb">{</span>IEEEeqnarraybox<span class="nb">}</span> 
+    <span class="k">\,</span> <span class="k">\right\}</span> <span class="k">\iff</span> <span class="k">\left\{</span> <span class="k">\,</span> 
+    <span class="k">\begin</span><span class="nb">{</span>IEEEeqnarraybox<span class="nb">}</span>[ <span class="k">\IEEEeqnarraystrutmode</span> <span class="k">\IEEEeqnarraystrutsizeadd</span><span class="nb">{</span>7pt<span class="nb">}</span> <span class="nb">{</span>7pt<span class="nb">}</span>][c]<span class="nb">{</span>rCl<span class="nb">}</span> 
+    a <span class="nb">&amp;</span> = <span class="nb">&amp;</span> <span class="k">\frac</span><span class="nb">{</span>x<span class="nb">}{</span>2<span class="nb">}</span> + <span class="k">\frac</span><span class="nb">{</span>y<span class="nb">}{</span>2<span class="nb">}</span> <span class="k">\\</span> 
+    b <span class="nb">&amp;</span> = <span class="nb">&amp;</span> <span class="k">\frac</span><span class="nb">{</span>x<span class="nb">}{</span>2<span class="nb">}</span> - <span class="k">\frac</span><span class="nb">{</span>y<span class="nb">}{</span>2<span class="nb">}</span> 
+    <span class="k">\end</span><span class="nb">{</span>IEEEeqnarraybox<span class="nb">}</span> 
+    <span class="k">\right</span>.
+    <span class="k">\label</span><span class="nb">{</span>eq:example<span class="nb">_</span>left<span class="nb">_</span>right2<span class="nb">}</span> 
+<span class="k">\end</span><span class="nb">{</span>IEEEeqnarray<span class="nb">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="3-实现函数组中每个函数逐个编号" class="headerLink"><a href="#3-%e5%ae%9e%e7%8e%b0%e5%87%bd%e6%95%b0%e7%bb%84%e4%b8%ad%e6%af%8f%e4%b8%aa%e5%87%bd%e6%95%b0%e9%80%90%e4%b8%aa%e7%bc%96%e5%8f%b7" class="header-mark"></a>3. 实现函数组中每个函数逐个编号</h3><p>上一个方法可以实现函数组，但他将函数组作为整体进行编号，要为组中每个函数逐个编号时，采用下述方法：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\begin</span><span class="nb">{</span>IEEEeqnarray<span class="nb">}{</span>rrCl<span class="nb">}</span>
+    <span class="nb">&amp;</span> <span class="k">\dot</span><span class="nb">{</span>x<span class="nb">}</span> <span class="nb">&amp;</span> = <span class="nb">&amp;</span> f(x,u) <span class="k">\\*</span> 
+    <span class="k">\smash</span><span class="nb">{</span><span class="k">\left\{</span> <span class="k">\IEEEstrut</span><span class="na">[8\jot]</span> <span class="k">\right</span>.<span class="nb">}</span> <span class="nb">&amp;</span> x+<span class="k">\dot</span><span class="nb">{</span>x<span class="nb">}</span> <span class="nb">&amp;</span> = <span class="nb">&amp;</span> h(x) <span class="k">\\*</span> 
+    <span class="nb">&amp;</span> x+<span class="k">\ddot</span><span class="nb">{</span>x<span class="nb">}</span> <span class="nb">&amp;</span> = <span class="nb">&amp;</span> g(x) 
+<span class="k">\end</span><span class="nb">{</span>IEEEeqnarray<span class="nb">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>在左侧再添加一列，用<code>\smash</code>实现大括号${$, 其中的<code>[8\jot]</code>需要根据公式的大小进行调整，数字为 $(lines \times 2 + 2)$(公式中有<code>\frac</code>时是2行)。</p>
+<ul>
+<li>若公式行数为偶数时，用隐藏行实现大括号的对齐</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\begin</span><span class="nb">{</span>IEEEeqnarray<span class="nb">}{</span>rrCl<span class="nb">}</span> 
+    <span class="nb">&amp;</span> <span class="k">\dot</span><span class="nb">{</span>x<span class="nb">}</span> <span class="nb">&amp;</span> = <span class="nb">&amp;</span> f(x,u) <span class="k">\\*</span>
+    [-0.625<span class="k">\normalbaselineskip</span>] 
+    <span class="c">% start invisible row 
+</span><span class="c"></span>    <span class="k">\smash</span><span class="nb">{</span><span class="k">\left\{</span> <span class="k">\IEEEstrut</span><span class="na">[6\jot]</span> <span class="k">\right</span>.<span class="nb">}</span> <span class="k">\nonumber</span> 
+    <span class="c">% end invisible row \\*
+</span><span class="c"></span>    [-0.625<span class="k">\normalbaselineskip</span>] 
+    <span class="nb">&amp;</span> x+<span class="k">\dot</span><span class="nb">{</span>x<span class="nb">}</span> <span class="nb">&amp;</span> = <span class="nb">&amp;</span> h(x) 
+<span class="k">\end</span><span class="nb">{</span>IEEEeqnarray<span class="nb">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>若某些公式占用多行导致大括号位置不对称时</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\begin</span><span class="nb">{</span>IEEEeqnarray<span class="nb">}{</span>rrCl<span class="nb">}</span>
+    <span class="k">\subnumberinglabel</span><span class="nb">{</span>eq:uneven2<span class="nb">}</span> 
+    <span class="nb">&amp;</span> a<span class="nb">_</span>1 + a<span class="nb">_</span>2 <span class="nb">&amp;</span> = <span class="nb">&amp;</span> <span class="k">\sum</span><span class="nb">_{</span>k=1<span class="nb">}^{</span><span class="k">\frac</span><span class="nb">{</span>M<span class="nb">}{</span>2<span class="nb">}}</span> f<span class="nb">_</span>k(x,u) <span class="k">\\*</span>
+    [-0.1<span class="k">\normalbaselineskip</span>] 
+    <span class="k">\smash</span><span class="nb">{</span><span class="k">\left\{</span> <span class="k">\IEEEstrut</span><span class="na">[12\jot]</span> <span class="k">\right</span>.<span class="nb">}</span> <span class="k">\nonumber</span> <span class="k">\\*</span>
+    [-0.525<span class="k">\normalbaselineskip</span>]
+    <span class="nb">&amp;</span> b <span class="nb">&amp;</span> = <span class="nb">&amp;</span> g(x,u) <span class="k">\\*</span> 
+    <span class="nb">&amp;</span> y<span class="nb">_{</span><span class="k">\theta</span><span class="nb">}</span> <span class="nb">&amp;</span> = <span class="nb">&amp;</span> h(x) 
+<span class="k">\end</span><span class="nb">{</span>IEEEeqnarray<span class="nb">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="文件头代码汇总" class="headerLink"><a href="#%e6%96%87%e4%bb%b6%e5%a4%b4%e4%bb%a3%e7%a0%81%e6%b1%87%e6%80%bb" class="header-mark"></a>文件头代码汇总</h2><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="c">% add packages
+</span><span class="c"></span><span class="k">\usepackage</span><span class="nb">{</span>amsmath<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="nb">{</span>IEEEtrantools<span class="nb">}</span>
+
+<span class="c">% add hyperlink for equation citation
+</span><span class="c"></span><span class="k">\usepackage</span><span class="na">[colorlinks=true,linkcolor=blue]</span><span class="nb">{</span>hyperref<span class="nb">}</span>
+
+<span class="c">% page-break permission : 0 :yes  10000:no  other:yes but let latex find someother way
+</span><span class="c"></span><span class="k">\interdisplaylinepenalty</span>=2500
+
+<span class="c">% fix hyperlink to invisible equation number
+</span><span class="c"></span><span class="k">\makeatletter</span>
+<span class="k">\def\IEEElabelanchoreqn</span>#1<span class="nb">{</span><span class="k">\bgroup</span>
+<span class="k">\def\@</span>currentlabel<span class="nb">{</span><span class="k">\p</span>@equation<span class="k">\theequation</span><span class="nb">}</span><span class="k">\relax</span>
+<span class="k">\def\@</span>currentHref<span class="nb">{</span><span class="k">\@</span>IEEEtheHrefequation<span class="nb">}</span><span class="k">\label</span><span class="nb">{</span>#1<span class="nb">}</span><span class="k">\relax</span>
+<span class="k">\Hy</span>@raisedlink<span class="nb">{</span><span class="k">\hyper</span>@anchorstart<span class="nb">{</span><span class="k">\@</span>currentHref<span class="nb">}}</span><span class="k">\relax</span>
+<span class="k">\Hy</span>@raisedlink<span class="nb">{</span><span class="k">\hyper</span>@anchorend<span class="nb">}</span><span class="k">\egroup</span><span class="nb">}</span>
+<span class="k">\makeatother</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\subnumberinglabel</span><span class="nb">}</span>[1]<span class="nb">{</span><span class="k">\IEEEyesnumber</span>
+  <span class="k">\IEEEyessubnumber*\IEEElabelanchoreqn</span><span class="nb">{</span>#1<span class="nb">}}</span>
+
+<span class="c">% fix font behavior of IEEEeqnarray
+</span><span class="c"></span><span class="k">\renewcommand</span><span class="nb">{</span><span class="k">\theequationdis</span><span class="nb">}{{</span><span class="k">\normalfont</span> (<span class="k">\theequation</span>)<span class="nb">}}</span> 
+<span class="k">\renewcommand</span><span class="nb">{</span><span class="k">\theIEEEsubequationdis</span><span class="nb">}{{</span><span class="k">\normalfont</span> (<span class="k">\theIEEEsubequation</span>)<span class="nb">}}</span> 
+
+<span class="c">% fix distance between f and ()
+</span><span class="c"></span><span class="k">\usepackage</span><span class="nb">{</span>mleftright<span class="nb">}</span>
+<span class="k">\mleftright</span>
+
+<span class="c">% fix ()paris in different line same size
+</span><span class="c"></span><span class="k">\newcommand</span><span class="nb">{</span><span class="k">\sizecorr</span><span class="nb">}</span>[1]<span class="nb">{</span><span class="k">\makebox</span><span class="na">[0cm]</span><span class="nb">{</span><span class="k">\phantom</span><span class="nb">{</span><span class="s">$</span><span class="nv">\displaystyle</span><span class="nb"> #</span><span class="m">1</span><span class="s">$</span><span class="nb">}}}</span>
+
+<span class="c">% argmin argmax  trace
+</span><span class="c"></span><span class="k">\DeclareMathOperator*</span><span class="nb">{</span><span class="k">\argminA</span><span class="nb">}{</span>arg<span class="k">\,</span>min<span class="nb">}</span>
+<span class="k">\DeclareMathOperator*</span><span class="nb">{</span><span class="k">\argminB</span><span class="nb">}{</span>argmin<span class="nb">}</span>
+<span class="k">\DeclareMathOperator*</span><span class="nb">{</span><span class="k">\argmaxA</span><span class="nb">}{</span>arg<span class="k">\,</span>max<span class="nb">}</span>
+<span class="k">\DeclareMathOperator*</span><span class="nb">{</span><span class="k">\argmaxB</span><span class="nb">}{</span>argmax<span class="nb">}</span>
+
+<span class="k">\DeclareMathOperator</span><span class="nb">{</span><span class="k">\tr</span><span class="nb">}{</span>Tr<span class="nb">}</span>
+
+<span class="c">% fix d in integration
+</span><span class="c"></span><span class="k">\newcommand</span><span class="nb">{</span><span class="k">\dd</span><span class="nb">}{</span><span class="k">\mathop</span><span class="nb">{}</span><span class="k">\!\mathrm</span><span class="nb">{</span>d<span class="nb">}}</span>
+
+</code></pre></td></tr></table>
+</div>
+</div><p><em>欢迎留言讨论。</em></p></div><footer>
+                        <div class="post">
+
+
+<div class="post-share"><div class="share-link">
+        <a class="share-icon share-twitter" href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="http://nicegeeker.gitHub.io/posts/latex_equation/" data-title="IEEE期刊投稿公式编辑方法" data-hashtags="latex,公式"><span class="svg-social-icon icon-twitter"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-facebook" href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="http://nicegeeker.gitHub.io/posts/latex_equation/" data-hashtag="latex"><span class="svg-social-icon icon-facebook"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-linkedin" href="javascript:void(0);" title="分享到 Linkedin" data-sharer="linkedin" data-url="http://nicegeeker.gitHub.io/posts/latex_equation/"><span class="svg-social-icon icon-linkedin"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-reddit" href="javascript:void(0);" title="分享到 Reddit" data-sharer="reddit" data-url="http://nicegeeker.gitHub.io/posts/latex_equation/"><span class="svg-social-icon icon-reddit"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-weibo" href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://nicegeeker.gitHub.io/posts/latex_equation/" data-title="IEEE期刊投稿公式编辑方法"><span class="svg-social-icon icon-weibo"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-evernote" href="javascript:void(0);" title="分享到 Evernote" data-sharer="evernote" data-url="http://nicegeeker.gitHub.io/posts/latex_equation/" data-title="IEEE期刊投稿公式编辑方法"><span class="svg-social-icon icon-evernote"></span></a>
+    </div></div>
+
+
+
+
+
+
+<div class="post-tags"><a href="/tags/latex/" class="tag">latex</a><a href="/tags/%E5%85%AC%E5%BC%8F/" class="tag">公式</a></div></div>
+                </footer></div>
+
+        <div id="toc-final"></div>
+        </div>
+
+    
+    </article>
+    <section class="page single comments content-block-position">
+        <h1 class="display-hidden">Комментарии</h1><div id="comments"><div id="gitalk" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://github.com/gitalk/gitalk"></a>Gitalk</a>.
+            </noscript></div></section></div>
+
+</main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.87.0">Hugo</a> 强力驱动 | 主题 - <a href="https://ublogger.netlify.app/?utm_source=http://nicegeeker.gitHub.io/&utm_medium=footer&utm_campaign=config&utm_term=2.0.1" target="_blank" title="uBlogger 2.0.1">uBlogger</a>
+                </div><div class="footer-line"><i class="svg-icon icon-copyright"></i><span>2021</span></div>
+        </div>
+    </footer></div>
+
+        <aside id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="svg-icon icon-arrow-up"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="svg-icon icon-comments-fixed"></i>
+            </a>
+        </aside><link rel="stylesheet" href="/lib/gitalk/gitalk.min.css"><script src="/lib/gitalk/gitalk.min.js"></script><script src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script src="/lib/autocomplete/autocomplete.min.js"></script><script src="/lib/algoliasearch/algoliasearch-lite.umd.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script src="/lib/prismjs/prism.js"></script><script>window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{"gitalk":{"admin":["nicegeeker"],"clientID":"79a74a80d23f7a1cc024","clientSecret":"b7df2fdfb64723328875de7201308c7b5c526970","id":"2021-06-19T10:42:17+08:00","owner":"nicegeeker","repo":"blog_comment","title":"IEEE期刊投稿公式编辑方法"}},"search":{"algoliaAppID":"6V7XBE70KQ","algoliaIndex":"my_blog","algoliaSearchKey":"9fbd83dc24ee0abf26f19dda65a1b0c0","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":30,"type":"algolia"}};</script><script src="/js/theme.min.js"></script></body>
+</html>

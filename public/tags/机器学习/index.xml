@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>机器学习 - 标签 - 我的技术博客</title>
+        <link>http://nicegeeker.gitHub.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</link>
+        <description>机器学习 - 标签 - 我的技术博客</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 19 Jun 2021 16:02:10 &#43;0800</lastBuildDate><atom:link href="http://nicegeeker.gitHub.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" rel="self" type="application/rss+xml" /><item>
+    <title>书籍推荐《Data-driven Science and Engineering》——Machine Learning, Dynamical Systems, and Control</title>
+    <link>http://nicegeeker.gitHub.io/posts/book_data_driven_sci_eng/</link>
+    <pubDate>Sat, 19 Jun 2021 16:02:10 &#43;0800</pubDate>
+    <author>Nicegeek</author>
+    <guid>http://nicegeeker.gitHub.io/posts/book_data_driven_sci_eng/</guid>
+    <description><![CDATA[数据驱动的工程实现，动态系统控制 作者：Steven L.Brunton, J.Nathan Kutz 剑桥大学出版 内容包括： 1.用SVD进行数据降维，维度变换，压缩感知； 2.学习算法 3.]]></description>
+</item></channel>
+</rss>

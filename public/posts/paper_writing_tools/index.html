@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noodp"/><title>论文写作工具链 | 我的技术博客</title><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://nicegeeker.gitHub.io/posts/paper_writing_tools/images/zotero_vscode.png"/>
+<meta name="twitter:title" content="论文写作工具链"/>
+<meta name="twitter:description" content="介绍我在写论文时常用的工具。"/><meta name="Description" content="介绍我在写论文时常用的工具。"><meta property="og:title" content="论文写作工具链" />
+<meta property="og:description" content="介绍我在写论文时常用的工具。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://nicegeeker.gitHub.io/posts/paper_writing_tools/" /><meta property="og:image" content="http://nicegeeker.gitHub.io/posts/paper_writing_tools/images/zotero_vscode.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-06-21T08:09:14+08:00" />
+<meta property="article:modified_time" content="2021-06-21T08:09:14+08:00" /><meta property="og:site_name" content="我的技术博客" />
+
+<meta name="application-name" content="uBlogger">
+<meta name="apple-mobile-web-app-title" content="uBlogger"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+        <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://nicegeeker.gitHub.io/posts/paper_writing_tools/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/lib/prismjs/prism.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "论文写作工具链",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/nicegeeker.gitHub.io\/posts\/paper_writing_tools\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "http:\/\/nicegeeker.gitHub.io\/posts\/paper_writing_tools\/images\/zotero_vscode.png",
+                            "width":  320 ,
+                            "height":  100 
+                        }],"genre": "posts","keywords": "写作, 工具","wordCount":  1934 ,
+        "url": "http:\/\/nicegeeker.gitHub.io\/posts\/paper_writing_tools\/","datePublished": "2021-06-21T08:09:14+08:00","dateModified": "2021-06-21T08:09:14+08:00","description": "介绍我在写论文时常用的工具。"
+    }
+    </script><script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "主页",
+            "item": "http:\/\/nicegeeker.gitHub.io\/"
+        },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "research",
+            "item": "http://nicegeeker.gitHub.io/categories/research/"
+        },{
+                "@type": "ListItem",
+                "position": 3,
+                "name": "论文写作工具链"
+            }]
+    }
+</script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header>
+    <div class="desktop header" id="header-desktop">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="我的技术博客" class="header-logo logo-svg"><span class="header-title-pre"><i class='fas fa-pencil-alt fa-fw'></i></span>NiceGeek</a>
+            </div>
+            <div class="menu">
+                <nav>
+                    <h2 class="display-hidden">Основная навигация</h2>
+                    <ul class="menu-inner"><li>
+                            <a class="menu-item" href="/posts/"> 博客文章 </a>
+                        </li><li>
+                            <a class="menu-item" href="/tags/"> 标签 </a>
+                        </li><li>
+                            <a class="menu-item" href="/categories/"> 分类 </a>
+                        </li><li>
+                            <a class="menu-item" href="/about/"> 关于 </a>
+                        </li></ul>
+                </nav><span class="menu-item delimiter"></span><span onclick="javascript:void(0);" class="menu-item language" title="选择语言">简体中文<select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/posts/paper_writing_tools/" selected>简体中文</option></select>
+                </span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <span class="svg-icon icon-search"></span>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <span class="svg-icon icon-cancel"></span>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <span class="svg-icon icon-loading"></span>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <span class="svg-icon icon-moon"></span>
+                </a>
+            </div>
+        </div>
+    </div><div class="mobile header" id="header-mobile">
+        <div class="header-container">
+            <div class="header-wrapper">
+                <div class="header-title">
+                    <a href="/" title="我的技术博客" class="header-logo"><span class="header-title-pre"><i class='fas fa-pencil-alt fa-fw'></i></span>NiceGeek</a>
+                </div>
+                <div class="menu-toggle" id="menu-toggle-mobile">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+            <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                        <div class="search mobile" id="search-mobile">
+                            <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                                <span class="svg-icon icon-search"></span>
+                            </a>
+                            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                                <span class="svg-icon icon-cancel"></span>
+                            </a>
+                            <span class="search-button search-loading" id="search-loading-mobile">
+                                <span class="svg-icon icon-loading"></span>
+                            </span>
+                        </div>
+                        <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                            取消
+                        </a>
+                    </div><nav>
+                    <h2 class="display-hidden">Основная навигация</h2>
+                    <ul><li>
+                            <a class="menu-item" href="/posts/" title="">博客文章</a>
+                        </li><li>
+                            <a class="menu-item" href="/tags/" title="">标签</a>
+                        </li><li>
+                            <a class="menu-item" href="/categories/" title="">分类</a>
+                        </li><li>
+                            <a class="menu-item" href="/about/" title="">关于</a>
+                        </li></ul>
+                </nav>
+                <a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <span class="svg-icon icon-moon"></span>
+                </a><span onclick="javascript:void(0);" class="menu-item" title="选择语言">简体中文<select class="language-select" onchange="location = this.value;"><option value="/posts/paper_writing_tools/" selected>简体中文</option></select>
+                    </span></div>
+        </div>
+    </div><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div></header><main class="main">
+<div class="container content-article page-toc theme-classic"><div class="toc" id="toc-auto">
+            <div class="toc-title">目录</div>
+            <div class="toc-content always-active" id="toc-content-auto"></div>
+        </div>
+
+    
+    
+    <article>
+    
+
+        <header class="header-post">
+
+            
+
+            
+            <div class="post-title">
+
+                    <div class="post-all-meta">
+                        <nav class="breadcrumbs">
+    <ol>
+        <li><a href="/">主页 </a></li><li><a href="/categories/research/">research </a></li><li>论文写作工具链</li>
+    </ol>
+</nav>
+                        <h1 class="single-title flipInX">论文写作工具链</h1><div class="post-meta summary-post-meta"><span class="post-category meta-item">
+                                <a href="/categories/research/"><span class="svg-icon icon-folder"></span>research</a>
+                            </span><span class="post-meta-date meta-item">
+                                <span class="svg-icon icon-clock"></span><time class="timeago" datetime="2021-06-21">2021-06-21</time>
+                            </span><span class="post-meta-words meta-item">
+                                <span class="svg-icon icon-pencil"></span>约 1934 字
+                            </span>
+                            <span class="post-meta-reading meta-item">
+                                <span class="svg-icon icon-stopwatch"></span>预计阅读 4 分钟
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                </header>
+
+        <div class="article-post toc-start">
+
+            <div class="content-block content-block-first content-block-position">
+
+                <div class="post single"><div class="image-theme-classic">
+                        <img src="http://nicegeeker.gitHub.io/posts/paper_writing_tools/images/zotero_vscode.png" style="width: 100%">
+                    </div><div class="details toc" id="toc-static"  data-kept="">
+                        <div class="details-summary toc-title">
+                            <span>目录</span>
+                        </div>
+                        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#使用该文献管理器的原因">使用该文献管理器的原因</a></li>
+    <li><a href="#使用技巧">使用技巧</a>
+      <ul>
+        <li><a href="#文献库和文件同步方式的选择">文献库和文件同步方式的选择</a></li>
+        <li><a href="#文献搜索和下载">文献搜索和下载</a></li>
+        <li><a href="#文献引用">文献引用</a></li>
+      </ul>
+    </li>
+    <li><a href="#其他好用的插件">其他好用的插件</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#写论文常用插件">写论文常用插件</a></li>
+    <li><a href="#几个建议">几个建议</a></li>
+  </ul>
+</nav></div>
+                    </div><p>主要介绍文献管理Zotero和编辑器Vscode以及在写论文时常用的插件。</p>
+<h1 id="文献管理器zotero" class="headerLink"><a href="#%e6%96%87%e7%8c%ae%e7%ae%a1%e7%90%86%e5%99%a8zotero" class="header-mark"></a>文献管理器Zotero</h1><p><a href="https://www.zotero.org/download/" target="_blank" rel="noopener noreffer">Zotero下载地址</a></p>
+<h2 id="使用该文献管理器的原因" class="headerLink"><a href="#%e4%bd%bf%e7%94%a8%e8%af%a5%e6%96%87%e7%8c%ae%e7%ae%a1%e7%90%86%e5%99%a8%e7%9a%84%e5%8e%9f%e5%9b%a0" class="header-mark"></a>使用该文献管理器的原因</h2><ul>
+<li>开源的文献管理器，有强大的社区支持，跨平台，最近推出了IOS版本</li>
+<li>可以定制化地实现一些自己想要的功能</li>
+<li>强大的文献收集和管理功能能力</li>
+<li>可以与vscode、word等编辑软件联动</li>
+</ul>
+<h2 id="使用技巧" class="headerLink"><a href="#%e4%bd%bf%e7%94%a8%e6%8a%80%e5%b7%a7" class="header-mark"></a>使用技巧</h2><h3 id="文献库和文件同步方式的选择" class="headerLink"><a href="#%e6%96%87%e7%8c%ae%e5%ba%93%e5%92%8c%e6%96%87%e4%bb%b6%e5%90%8c%e6%ad%a5%e6%96%b9%e5%bc%8f%e7%9a%84%e9%80%89%e6%8b%a9" class="header-mark"></a>文献库和文件同步方式的选择</h3><p>共有三种同步方式：</p>
+<ul>
+<li>都利用Zotero软件提供的空间进行同步：方便快捷，但是免费用户的空间较少</li>
+<li>利用Zotero同步文献库，利用带WebDev功能的网盘同步文献： 如坚果云等，缺点是每个文献都放在一个单独的文件夹，要通过Zotero软件找到文件位置，云端是以压缩包的形式存储，不够灵活</li>
+<li>利用Zorero同步文献库，文件集中存放在某个文件夹，以附件的方式作为链结添加到每个Zotero条目上，单独使用带同步功能的网盘，如坚果云，OneDrive，google网盘等，将文件夹同步到云端。</li>
+</ul>
+<p>建议采用第三种方式，解决了Zotero软件自带的云空间较小的问题，同时也便于文献在云端进行查找和分享。（唯一缺点是IOS版本目前不支持此种方式，有其他替代方案）</p>
+<p>实现步骤：</p>
+<p>1.安装<a href="https://github.com/jlegewie/zotfile" target="_blank" rel="noopener noreffer">Zotfile</a>插件。 
+
+
+
+    
+<img loading="lazy" decoding="async"
+         class="render-image"
+         src="https://img.shields.io/github/stars/jlegewie/zotfile.svg"
+         alt="Github stars"
+         title="zotfile.svg"
+    /></p>
+<p>2.设置Zotero的附件文件夹，如下图所示：
+
+
+
+
+    
+<img loading="lazy" decoding="async"
+         class="render-image"
+         src="https://pic.rgsc.top/2021-06-21-f167567e-2021-06-21_08-38.png"
+         alt="https://pic.rgsc.top/2021-06-21-f167567e-2021-06-21_08-38.png"
+         title="2021-06-21-f167567e-2021-06-21_08-38.png"
+    />
+这里的设置是确保在不同的机器上使用时，通过相对位置能找到对应的文件。</p>
+<p>3.设置Zotfile附件保存位置
+
+
+
+
+    
+<img loading="lazy" decoding="async"
+         class="render-image"
+         src="https://pic.rgsc.top/2021-06-21-cf629919-zotfile.png"
+         alt="https://pic.rgsc.top/2021-06-21-cf629919-zotfile.png"
+         title="2021-06-21-cf629919-zotfile.png"
+    /></p>
+<p>这里第一个设置项目”Source Folder for Attaching New Files“可以设置一个文献下载文件夹的地址，在Zotero中选择”附件新文件“会把该文件夹中<strong>最新的一个文件</strong>，移动到你的Zotero文件夹，并作为链结添加到条目上。</p>
+<p>另外这个插件还具备了自动重命名功能，可以根据你自己定义的规则对下载的文件进行重命名。</p>
+<h3 id="文献搜索和下载" class="headerLink"><a href="#%e6%96%87%e7%8c%ae%e6%90%9c%e7%b4%a2%e5%92%8c%e4%b8%8b%e8%bd%bd" class="header-mark"></a>文献搜索和下载</h3><p>几种文献添加方式：</p>
+<p>1.直接用DoI或者arXiv号，添加文件，让Zotero自动下载，可以实现直接从SCI-Hub上下载文献。
+实现方法：
+设置&mdash;Advanced&mdash;Config Editor
+找到extensions.zotero.findPDFs.resolvers, 写入以下代码：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">{&#34;name&#34;:&#34;Sci-Hub&#34;, &#34;method&#34;:&#34;GET&#34;, &#34;url&#34;:&#34;https://sci-hub.st/{doi}&#34;, &#34;mode&#34;:&#34;html&#34;, &#34;selector&#34;:&#34;#pdf&#34;, &#34;attribute&#34;:&#34;src&#34;, &#34;automatic&#34;:true }
+</code></pre></td></tr></table>
+</div>
+</div><p>2.用浏览器插件，在网页上直接获取文献元信息，让Zotero自动下载。</p>
+<p>3.将下载好PDF拖入Zotero，可以自动提区PDF文件自带的文献元信息。</p>
+<p>建议采用第一和第二种方式，文献元信息比较完整。第三种方式获取完元信息后，将PDF改为以附件的方式链结到条目上。</p>
+<h3 id="文献引用" class="headerLink"><a href="#%e6%96%87%e7%8c%ae%e5%bc%95%e7%94%a8" class="header-mark"></a>文献引用</h3><p>日常要养成好的文献管理习惯，对下载的文献进行分类，维护好文献的元信息，这样才不至于每次引用文献时，要做大量的修改和调整工作。主要讲几个技巧和一些细节：</p>
+<p>1.在latex中引用文献，使用<a href="https://github.com/retorquere/zotero-better-bibtex" target="_blank" rel="noopener noreffer">Better Bibtex</a>插件：
+
+
+
+    
+<img loading="lazy" decoding="async"
+         class="render-image"
+         src="https://img.shields.io/github/stars/retorquere/zotero-better-bibtex.svg"
+         alt="Github stars"
+         title="zotero-better-bibtex.svg"
+    /></p>
+<p>（结合Vscode的 Zotero Latex插件）</p>
+<ul>
+<li>可以设置自动导出.Bib文件，</li>
+<li>管理文献的Citekey，确保唯一不重复</li>
+<li>Pin Citekey确保Citekey不会改变</li>
+<li>可定制导出的文献元字段
+
+
+
+
+    
+<img loading="lazy" decoding="async"
+         class="render-image"
+         src="https://pic.rgsc.top/2021-06-21-012f903c-2021-06-21_09-30.png"
+         alt="https://pic.rgsc.top/2021-06-21-012f903c-2021-06-21_09-30.png"
+         title="2021-06-21-012f903c-2021-06-21_09-30.png"
+    /></li>
+</ul>
+<p>2.解决IEEE文献引用中的缩写问题
+IEEE文献引用通常需要对期刊和会议进行缩写。</p>
+<ul>
+<li>
+<p>期刊缩写可以填写在字段“Journal Abbr” 中。</p>
+</li>
+<li>
+<p>会议缩写Zotero没有自带的字段。解决方法：</p>
+<ul>
+<li>在“Extra”字段，添加：tex.confAbbr: Conf. name.</li>
+<li>在Better Bib设置&mdash;Advanced &mdash; postscript 添加代码：</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">if (Translator.BetterBibTeX	&amp;&amp; item.itemType ===&#39;conferencePaper&#39;) {
+  if (reference.has.confabbr){
+   reference.add({ name: &#39;booktitle&#39;, value: reference.has.confabbr.value});  
+   reference.remove(&#39;confabbr&#39;); 
+  }
+ }
+</code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+<p>3.Word中引用文献
+使用Zotero的Word插件，直接插入文献。</p>
+<ul>
+<li>在设置&mdash;Cite中添加文献引用样式（大论文的样式<em>JM Chinese Std GB/T 7714-2005-AuLower-Bilan</em>）</li>
+<li>在设置&mdash;Export中使用对应的样式。
+
+
+
+
+    
+<img loading="lazy" decoding="async"
+         class="render-image"
+         src="https://pic.rgsc.top/2021-06-21-a9da48ab-2021-06-21_09-49.png"
+         alt="https://pic.rgsc.top/2021-06-21-a9da48ab-2021-06-21_09-49.png"
+         title="2021-06-21-a9da48ab-2021-06-21_09-49.png"
+    /></li>
+</ul>
+<h2 id="其他好用的插件" class="headerLink"><a href="#%e5%85%b6%e4%bb%96%e5%a5%bd%e7%94%a8%e7%9a%84%e6%8f%92%e4%bb%b6" class="header-mark"></a>其他好用的插件</h2><ul>
+<li>
+
+
+
+    
+<img loading="lazy" decoding="async"
+         class="render-image"
+         src="https://img.shields.io/github/stars/bwiernik/zotero-shortdoi.svg"
+         alt="Github stars"
+         title="zotero-shortdoi.svg"
+    /> <a href="https://github.com/bwiernik/zotero-shortdoi" target="_blank" rel="noopener noreffer">DOI manager</a>： 自动从网上获取文献的DOI号</li>
+<li>
+
+
+
+    
+<img loading="lazy" decoding="async"
+         class="render-image"
+         src="https://img.shields.io/github/stars/eschnett/zotero-citationcounts.svg"
+         alt="Github stars"
+         title="zotero-citationcounts.svg"
+    /> <a href="https://github.com/eschnett/zotero-citationcounts" target="_blank" rel="noopener noreffer">Zotero Citation Counts Manager</a>: 获取文献引用量</li>
+<li>
+
+
+
+    
+<img loading="lazy" decoding="async"
+         class="render-image"
+         src="https://img.shields.io/github/stars/dcartertod/zotero-plugins.svg"
+         alt="Github stars"
+         title="zotero-plugins.svg"
+    /> <a href="https://github.com/dcartertod/zotero-plugins" target="_blank" rel="noopener noreffer">ZoteroPreview</a>: 添加文献引用预览</li>
+<li>
+
+
+
+    
+<img loading="lazy" decoding="async"
+         class="render-image"
+         src="https://img.shields.io/github/stars/l0o0/jasminum.svg"
+         alt="Github stars"
+         title="jasminum.svg"
+    /> <a href="https://github.com//l0o0/jasminum" target="_blank" rel="noopener noreffer">Jasminum</a>： 用于识别中文元数据</li>
+<li>
+
+
+
+    
+<img loading="lazy" decoding="async"
+         class="render-image"
+         src="https://img.shields.io/github/stars/UB-Mannheim/zotero-ocr.svg"
+         alt="Github stars"
+         title="zotero-ocr.svg"
+    /> <a href="https://github.com/UB-Mannheim/zotero-ocr" target="_blank" rel="noopener noreffer">Zotero OCR</a>: OCR 工具</li>
+<li>
+
+
+
+    
+<img loading="lazy" decoding="async"
+         class="render-image"
+         src="https://img.shields.io/github/stars/wshanks/Zutilo.svg"
+         alt="Github stars"
+         title="Zutilo.svg"
+    /> <a href="https://github.com/wshanks/Zutilo" target="_blank" rel="noopener noreffer">Zutilo Utility for Zotero</a>: 为zotero添加快捷键</li>
+</ul>
+<h1 id="编辑器软件vscode" class="headerLink"><a href="#%e7%bc%96%e8%be%91%e5%99%a8%e8%bd%af%e4%bb%b6vscode" class="header-mark"></a>编辑器软件VsCode</h1><h2 id="写论文常用插件" class="headerLink"><a href="#%e5%86%99%e8%ae%ba%e6%96%87%e5%b8%b8%e7%94%a8%e6%8f%92%e4%bb%b6" class="header-mark"></a>写论文常用插件</h2><p>不同的插件使得VScode的功能非常强大，介绍几个写论文必备的：</p>
+<ul>
+<li>Latex Wokshop: 编译Latex</li>
+<li>Latex language support: 提供latex代码高亮，代码片段</li>
+<li>Zotero Latex： 结合Zotero的Better Bib插入参考文献</li>
+<li>Spell Right： 离线的拼写检查工具</li>
+<li>Grammarly： 在VsCode中使用grammarly进行语法检查</li>
+<li>GitLens： 论文备份和版本管理</li>
+</ul>
+<h2 id="几个建议" class="headerLink"><a href="#%e5%87%a0%e4%b8%aa%e5%bb%ba%e8%ae%ae" class="header-mark"></a>几个建议</h2><ul>
+<li>建议使用vim编辑方式：
+初期适应过程较慢，一旦用熟练了，所有操作不依赖鼠标，效率大大提高。</li>
+<li>学会设置自己的Code Snippets，通过日常积累代码片段，提升效率</li>
+<li>利用自动补全和Snippets功能，练习手打公式（IEEE公式编辑参考博文<a href="https://blog.nicegeek.tech/posts/how-to-edit-equation-for-ieee/" target="_blank" rel="noopener noreffer">IEEE期刊投稿公式编辑方法</a>）</li>
+<li>用git备份论文，做好版本管理，也可以备份到github上</li>
+</ul></div><footer>
+                        <div class="post">
+
+
+<div class="post-share"><div class="share-link">
+        <a class="share-icon share-twitter" href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="http://nicegeeker.gitHub.io/posts/paper_writing_tools/" data-title="论文写作工具链" data-hashtags="写作,工具"><span class="svg-social-icon icon-twitter"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-facebook" href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="http://nicegeeker.gitHub.io/posts/paper_writing_tools/" data-hashtag="写作"><span class="svg-social-icon icon-facebook"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-linkedin" href="javascript:void(0);" title="分享到 Linkedin" data-sharer="linkedin" data-url="http://nicegeeker.gitHub.io/posts/paper_writing_tools/"><span class="svg-social-icon icon-linkedin"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-reddit" href="javascript:void(0);" title="分享到 Reddit" data-sharer="reddit" data-url="http://nicegeeker.gitHub.io/posts/paper_writing_tools/"><span class="svg-social-icon icon-reddit"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-weibo" href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://nicegeeker.gitHub.io/posts/paper_writing_tools/" data-title="论文写作工具链"><span class="svg-social-icon icon-weibo"></span></a>
+    </div><div class="share-link">
+        <a class="share-icon share-evernote" href="javascript:void(0);" title="分享到 Evernote" data-sharer="evernote" data-url="http://nicegeeker.gitHub.io/posts/paper_writing_tools/" data-title="论文写作工具链"><span class="svg-social-icon icon-evernote"></span></a>
+    </div></div>
+
+
+
+
+
+
+<div class="post-tags"><a href="/tags/%E5%86%99%E4%BD%9C/" class="tag">写作</a><a href="/tags/%E5%B7%A5%E5%85%B7/" class="tag">工具</a></div></div>
+                </footer></div>
+
+        <div id="toc-final"></div>
+        </div>
+
+    
+    </article>
+    <section class="page single comments content-block-position">
+        <h1 class="display-hidden">Комментарии</h1><div id="comments"><div id="gitalk" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://github.com/gitalk/gitalk"></a>Gitalk</a>.
+            </noscript></div></section></div>
+
+</main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.87.0">Hugo</a> 强力驱动 | 主题 - <a href="https://ublogger.netlify.app/?utm_source=http://nicegeeker.gitHub.io/&utm_medium=footer&utm_campaign=config&utm_term=2.0.1" target="_blank" title="uBlogger 2.0.1">uBlogger</a>
+                </div><div class="footer-line"><i class="svg-icon icon-copyright"></i><span>2021</span></div>
+        </div>
+    </footer></div>
+
+        <aside id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="svg-icon icon-arrow-up"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="svg-icon icon-comments-fixed"></i>
+            </a>
+        </aside><link rel="stylesheet" href="/lib/gitalk/gitalk.min.css"><script src="/lib/gitalk/gitalk.min.js"></script><script src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script src="/lib/autocomplete/autocomplete.min.js"></script><script src="/lib/algoliasearch/algoliasearch-lite.umd.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script src="/lib/prismjs/prism.js"></script><script>window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{"gitalk":{"admin":["nicegeeker"],"clientID":"79a74a80d23f7a1cc024","clientSecret":"b7df2fdfb64723328875de7201308c7b5c526970","id":"2021-06-21T08:09:14+08:00","owner":"nicegeeker","repo":"blog_comment","title":"论文写作工具链"}},"search":{"algoliaAppID":"6V7XBE70KQ","algoliaIndex":"my_blog","algoliaSearchKey":"9fbd83dc24ee0abf26f19dda65a1b0c0","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":30,"type":"algolia"}};</script><script src="/js/theme.min.js"></script></body>
+</html>

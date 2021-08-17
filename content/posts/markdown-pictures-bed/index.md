@@ -1,16 +1,22 @@
 ---
-weight: 2
+author: Nicegeek
 title: "七牛云qshell工具和制作永久免费的markdown图床"
-date: 2020-02-19T09:27:56+08:00
-lastmod: 2021-06-19T15:02:41+08:00
-draft: false
 description: "利用七牛云的对象存储服务和mac的automator功能，打造一个可以一键上传图片文件，并自动将链接地址保存到粘贴板的功能。"
+
+slug: markdown_image_bed
 resources:
 - name: "featured-image"
-  src: "featured-image.png"
+  src: "images/markdown.png"
 
-tags: ["bolg","markdown"]
+tags: ["blog","markdown"]
 categories: ["technology"]
+
+isCJKLanguage: true
+draft: false
+
+weight: 2
+date: 2020-02-19T09:27:56+08:00
+lastmod: 2021-06-19T15:02:41+08:00
 ---
 
 用markdown写文档时，用图片在本地的相对位置，可以正常显示，但是当需要上传至自己的博客时，图片就看不到了。利用七牛云的对象存储服务和mac的automator功能，或者结合Linux的Dophin文件管理器，打造一个可以一键上传图片文件，并自动将链接地址保存到粘贴板的功能。具体步骤如下：

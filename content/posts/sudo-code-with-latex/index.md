@@ -1,16 +1,22 @@
 ---
-weight: 3
+author: Nicegeek
 title: "用latex写伪代码"
-date: 2021-06-19T15:34:56+08:00
-lastmod: 2021-06-19T15:35:36+08:00  
-draft: false
 description: "用latex写伪代码"
+
+slug: latex_algorithm 
 resources:
-  - name: "featured-image"
-    src: "featured-image.png"
+- name: "featured-image"
+  src: "images/latex.png"
 
 tags: ["latex"]
 categories: ["research"]
+
+isCJKLanguage: true
+draft: false
+
+weight: 3
+date: 2021-06-19T15:34:56+08:00
+lastmod: 2021-06-19T15:35:36+08:00  
 ---
 
 个人推荐使用Algorithm2e在$latex$中编写伪代码。

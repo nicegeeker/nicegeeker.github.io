@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>公式 - 标签 - 我的技术博客</title>
+        <link>http://nicegeeker.gitHub.io/tags/%E5%85%AC%E5%BC%8F/</link>
+        <description>公式 - 标签 - 我的技术博客</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 19 Jun 2021 10:42:17 &#43;0800</lastBuildDate><atom:link href="http://nicegeeker.gitHub.io/tags/%E5%85%AC%E5%BC%8F/" rel="self" type="application/rss+xml" /><item>
+    <title>IEEE期刊投稿公式编辑方法</title>
+    <link>http://nicegeeker.gitHub.io/posts/latex_equation/</link>
+    <pubDate>Sat, 19 Jun 2021 10:42:17 &#43;0800</pubDate>
+    <author>Nicegeek</author>
+    <guid>http://nicegeeker.gitHub.io/posts/latex_equation/</guid>
+    <description><![CDATA[<p>本文介绍了向IEEE期刊投稿时，怎么优雅地编辑公式。</p>]]></description>
+</item></channel>
+</rss>
